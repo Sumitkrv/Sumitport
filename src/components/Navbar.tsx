@@ -38,7 +38,7 @@ const Navbar = () => {
           const elem = e.currentTarget as HTMLAnchorElement;
           const section = elem.getAttribute("data-href");
           const instance = getSmoother();
-          instance?.scrollTo(section, true, "top top");
+          instance?.scrollTo(section, true, "top 110px");
         }
       };
       element.addEventListener("click", handler);
@@ -81,6 +81,16 @@ const Navbar = () => {
           <li>
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#achievements" href="#achievements">
+              <HoverLinks text="ACHIEVEMENTS" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#skills" href="#skills">
+              <HoverLinks text="SKILLS" />
             </a>
           </li>
           <li>

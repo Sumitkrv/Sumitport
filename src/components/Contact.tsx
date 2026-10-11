@@ -23,13 +23,13 @@ const Contact = () => {
             <h4>Education</h4>
             <p>
               B.Tech in Artificial Intelligence & Machine Learning<br />
-              GGSIPU · CGPA: 8.48/10.0
+              Guru Gobind Singh Indraprastha University, Delhi<br />
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/thakursumi498"
+              href="https://github.com/Sumitkrv"
               target="_blank"
               data-cursor="disable"
               className="contact-social"

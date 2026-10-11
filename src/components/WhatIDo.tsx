@@ -2,6 +2,63 @@ import { useEffect, useRef } from "react";
 import "./styles/WhatIDo.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+const services = [
+  {
+    title: "FULL-STACK DEVELOPMENT",
+    subtitle: "Building Scalable Web Applications",
+    description:
+      "Building responsive web applications using React.js, Node.js, Flask, and REST APIs. Developing frontend interfaces, backend services, authentication workflows, and database integrations with a focus on performance and reliability.",
+    skills: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "Flask",
+      "FastAPI",
+      "REST APIs",
+      "MongoDB",
+      "PostgreSQL",
+      "JWT",
+    ],
+  },
+  {
+    title: "AI & BUSINESS AUTOMATION",
+    subtitle: "Intelligent Integrations and Workflow Automation",
+    description:
+      "Integrating AI capabilities and building automation workflows that reduce repetitive manual operations and improve business processes. Developing practical software solutions tailored to application and business requirements.",
+    skills: ["Python", "AI Integration", "Business Automation", "API Integration"],
+  },
+  {
+    title: "TESTING & QUALITY ENGINEERING",
+    subtitle: "Reliable and Maintainable Software",
+    description:
+      "Testing application workflows, debugging production issues, and improving software reliability through unit testing, integration testing, functional testing, and end-to-end automation.",
+    skills: [
+      "Pytest",
+      "Vitest",
+      "Playwright",
+      "Unit Testing",
+      "Integration Testing",
+      "Functional Testing",
+      "Test Automation",
+    ],
+  },
+  {
+    title: "RESPONSIVE UI & FRONTEND ENGINEERING",
+    subtitle: "Accessible, Responsive User Experiences",
+    description:
+      "Developing responsive business websites and frontend interfaces using modern web technologies. Improving layouts, navigation, accessibility, and frontend performance across desktop, tablet, and mobile devices.",
+    skills: [
+      "React.js",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Tailwind CSS",
+      "Vite",
+      "Responsive Design",
+    ],
+  },
+];
+
 const WhatIDo = () => {
   const containerRef = useRef<(HTMLDivElement | null)[]>([]);
   const clickHandlersRef = useRef(new Map<HTMLDivElement, EventListener>());
@@ -71,95 +128,52 @@ const WhatIDo = () => {
               />
             </svg>
           </div>
-          <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 0)}
-          >
-            <div className="what-border1">
-              <svg height="100%">
-                <line
-                  x1="0"
-                  y1="0"
-                  x2="100%"
-                  y2="0"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-                <line
-                  x1="0"
-                  y1="100%"
-                  x2="100%"
-                  y2="100%"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-              </svg>
-            </div>
-            <div className="what-corner"></div>
+          {services.map((service, index) => (
+            <div
+              className="what-content what-noTouch"
+              ref={(el) => setRef(el, index)}
+              key={service.title}
+            >
+              <div className="what-border1">
+                <svg height="100%">
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="100%"
+                    y2="0"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeDasharray="6,6"
+                  />
+                  <line
+                    x1="0"
+                    y1="100%"
+                    x2="100%"
+                    y2="100%"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeDasharray="6,6"
+                  />
+                </svg>
+              </div>
+              <div className="what-corner"></div>
 
-            <div className="what-content-in">
-              <h3>FRONTEND</h3>
-              <h4>Building Interactive UIs</h4>
-              <p>
-                Crafting responsive interfaces with modern frontend practices.
-                I focus on clean layouts, usability, and smooth interactions
-                across mobile and desktop experiences.
-              </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">React.js</div>
-                <div className="what-tags">HTML5</div>
-                <div className="what-tags">CSS3</div>
-                <div className="what-tags">JavaScript</div>
-                <div className="what-tags">Tailwind CSS</div>
-                <div className="what-tags">Bootstrap</div>
-                <div className="what-tags">UI/UX</div>
+              <div className="what-content-in">
+                <h3>{service.title}</h3>
+                <h4>{service.subtitle}</h4>
+                <p>{service.description}</p>
+                <h5>Skillset & tools</h5>
+                <div className="what-content-flex">
+                  {service.skills.map((skill) => (
+                    <div className="what-tags" key={skill}>
+                      {skill}
+                    </div>
+                  ))}
+                </div>
+                <div className="what-arrow"></div>
               </div>
-              <div className="what-arrow"></div>
             </div>
-          </div>
-          <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
-          >
-            <div className="what-border1">
-              <svg height="100%">
-                <line
-                  x1="0"
-                  y1="100%"
-                  x2="100%"
-                  y2="100%"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeDasharray="6,6"
-                />
-              </svg>
-            </div>
-            <div className="what-corner"></div>
-            <div className="what-content-in">
-              <h3>CORE CS & OPEN SOURCE</h3>
-              <h4>Problem Solving & Collaboration</h4>
-              <p>
-                Applying strong fundamentals and collaboration practices to build
-                better software. I actively mentor contributors and support
-                high-quality open-source contributions.
-              </p>
-              <h5>Skillset & tools</h5>
-              <div className="what-content-flex">
-                <div className="what-tags">C++</div>
-                <div className="what-tags">Java</div>
-                <div className="what-tags">DSA</div>
-                <div className="what-tags">OOPs</div>
-                <div className="what-tags">DBMS</div>
-                <div className="what-tags">Computer Networks</div>
-                <div className="what-tags">Operating Systems</div>
-                <div className="what-tags">Git & GitHub</div>
-              </div>
-              <div className="what-arrow"></div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

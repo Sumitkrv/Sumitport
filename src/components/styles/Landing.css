@@ -198,6 +198,7 @@
 
 .landing-info {
   position: absolute;
+  width: calc(100% - 30px);
   right: 50%;
   transform: translateX(50%);
   bottom: 40px;
@@ -236,7 +237,7 @@
 h2.landing-info-h2 {
   color: #14b8a6;
   font-size: 42px;
-  width: 120%;
+  width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
   font-weight: 600;
@@ -244,9 +245,21 @@ h2.landing-info-h2 {
   margin-left: -5px;
 }
 
-.landing-h2-2 {
-  position: absolute;
-  top: 0;
+.landing-role-slot {
+  display: grid !important;
+  grid-template-areas: "role";
+  overflow: hidden;
+  min-height: 2.2em;
+  line-height: 1.1 !important;
+}
+
+.landing-role-title {
+  grid-area: role;
+  width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  opacity: 0;
 }
 
 .landing-info-h2::after {
@@ -292,6 +305,7 @@ h2.landing-info-h2 {
   h2.landing-info-h2 {
     font-size: 38px;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -343,6 +357,8 @@ h2.landing-info-h2 {
   }
 
   .landing-info {
+    width: 42vw;
+    max-width: 620px;
     bottom: auto;
     top: 51%;
     z-index: inherit;
@@ -350,6 +366,21 @@ h2.landing-info-h2 {
     transform: translate(0%, -50%);
     right: auto;
     left: 66%;
+  }
+
+  .landing-role-slot {
+    min-height: 1.2em;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .landing-info {
+    max-width: calc(100% - 30px);
+  }
+
+  h2.landing-info-h2 {
+    font-size: clamp(28px, 8vw, 55px);
   }
 }
 

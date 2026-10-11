@@ -15,9 +15,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
   --accentColor: #5eead4;
   --backgroundColor: #0a0e17;
   --vh: 100vh;
@@ -35,6 +35,11 @@ h6 {
 
 body {
   overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accentColor);
+  outline-offset: 4px;
 }
 
 a {
@@ -106,7 +111,9 @@ body {
 .techstack {
   width: 100%;
   position: relative;
-  overflow: clip;
+  overflow: hidden;
+  padding: 0 24px;
+  box-sizing: border-box;
   height: var(--vh);
   margin: auto;
   margin-top: 50px;
@@ -122,6 +129,15 @@ body {
   left: 0;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.tech-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {

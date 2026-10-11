@@ -6,12 +6,11 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Passionate web developer and open-source contributor focused on building
-          responsive, user-friendly web applications. I enjoy creating clean UI/UX,
-          solving real-world product problems, and collaborating across teams to
-          deliver practical frontend solutions. As a mentor in open-source programs,
-          I also help developers with Git/GitHub workflows, code quality, and
-          contribution best practices.
+          Software Developer experienced in full-stack development, scalable web
+          applications, automation workflows, and production-level deployments.
+          Skilled in building responsive applications, designing REST APIs,
+          integrating authentication, testing software, debugging production
+          issues, and optimizing performance.
         </p>
       </div>
     </div>
