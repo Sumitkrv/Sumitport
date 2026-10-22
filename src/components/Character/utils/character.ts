@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { DRACOLoader, GLTF, GLTFLoader } from "three-stdlib";
-import { setCharTimeline, setAllTimeline } from "../../utils/GsapScroll";
+import { setCharTimeline } from "../../utils/GsapScroll";
 import { decryptFile } from "./decrypt";
 
 const setCharacter = (
@@ -12,6 +12,24 @@ const setCharacter = (
   const dracoLoader = new DRACOLoader();
   dracoLoader.setDecoderPath("/draco/");
   loader.setDRACOLoader(dracoLoader);
+  let disposed = false;
+  let loadedCharacter: GLTF | null = null;
+  const scrollCleanups: Array<() => void> = [];
+
+  const disposeGLTF = (gltf: GLTF) => {
+    gltf.scene.traverse((object) => {
+      const mesh = object as THREE.Mesh;
+      if (!mesh.isMesh) return;
+      mesh.geometry.dispose();
+      const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+      materials.forEach((material) => {
+        Object.values(material).forEach((value) => {
+          if (value instanceof THREE.Texture) value.dispose();
+        });
+        material.dispose();
+      });
+    });
+  };
 
   const loadCharacter = async (): Promise<GLTF | null> => {
     const encryptedBlob = await decryptFile(
@@ -22,8 +40,16 @@ const setCharacter = (
 
     try {
       const gltf = await loader.loadAsync(blobUrl);
+      if (disposed) {
+        disposeGLTF(gltf);
+        return null;
+      }
       const character = gltf.scene;
       await renderer.compileAsync(character, camera, scene);
+      if (disposed) {
+        disposeGLTF(gltf);
+        return null;
+      }
 
       character.traverse((child) => {
         if (!(child as THREE.Mesh).isMesh) return;
@@ -50,11 +76,11 @@ const setCharacter = (
         mesh.frustumCulled = true;
       });
 
-      setCharTimeline(character, camera);
-      setAllTimeline();
+      scrollCleanups.push(setCharTimeline(character, camera));
+      loadedCharacter = gltf;
 
-      const footR = character.getObjectByName("footR");
-      const footL = character.getObjectByName("footL");
+      const footR = character.getObjectByName("foot.R");
+      const footL = character.getObjectByName("foot.L");
       if (footR) footR.position.y = 3.36;
       if (footL) footL.position.y = 3.36;
 
@@ -68,7 +94,19 @@ const setCharacter = (
     }
   };
 
-  return { loadCharacter };
+  const dispose = () => {
+    disposed = true;
+    scrollCleanups.forEach((cleanup) => cleanup());
+    scrollCleanups.length = 0;
+    if (loadedCharacter) {
+      scene.remove(loadedCharacter.scene);
+      disposeGLTF(loadedCharacter);
+      loadedCharacter = null;
+    }
+    dracoLoader.dispose();
+  };
+
+  return { loadCharacter, dispose };
 };
 
 export default setCharacter;

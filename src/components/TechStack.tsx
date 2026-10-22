@@ -10,8 +10,8 @@ import {
   CylinderCollider,
   RapierRigidBody,
 } from "@react-three/rapier";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
   "/images/react2.webp",
   "/images/next2.webp",
@@ -22,7 +22,29 @@ const imageUrls = [
   "/images/typescript.webp",
   "/images/javascript.webp",
 ];
-const textures = imageUrls.map((url) => textureLoader.load(url));
+const technologyNames = [
+  "React",
+  "Next.js",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "MySQL",
+  "TypeScript",
+  "JavaScript",
+];
+let textures: THREE.Texture[] | null = null;
+
+const supportsWebGL = () => {
+  try {
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("webgl2") || canvas.getContext("webgl");
+    const supported = Boolean(context);
+    context?.getExtension("WEBGL_lose_context")?.loseContext();
+    return supported;
+  } catch {
+    return false;
+  }
+};
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
@@ -126,20 +148,25 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
 
 const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
+  const hasWebGL = useMemo(supportsWebGL, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const work = document.getElementById("work");
-      if (!work) return;
-      const threshold = work.getBoundingClientRect().top + scrollY;
-      setIsActive(scrollY + window.innerHeight * 0.6 > threshold);
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (!hasWebGL) return;
+    const trigger = ScrollTrigger.create({
+      trigger: ".techstack",
+      start: "top 85%",
+      end: "bottom 15%",
+      onEnter: () => setIsActive(true),
+      onEnterBack: () => setIsActive(true),
+      onLeave: () => setIsActive(false),
+      onLeaveBack: () => setIsActive(false),
+    });
+    return () => trigger.kill();
+  }, [hasWebGL]);
+
   const materials = useMemo(() => {
+    if (!hasWebGL) return [];
+    textures ??= imageUrls.map((url) => new THREE.TextureLoader().load(url));
     return textures.map(
       (texture) =>
         new THREE.MeshPhysicalMaterial({
@@ -152,11 +179,20 @@ const TechStack = () => {
           clearcoat: 0.1,
         })
     );
-  }, []);
+  }, [hasWebGL]);
 
   return (
     <div className="techstack">
       <h2> My Techstack</h2>
+
+      {!hasWebGL ? (
+        <div className="techstack-fallback" aria-label="Technologies in my stack">
+          <p>Interactive 3D view is unavailable in this browser.</p>
+          <ul>
+            {technologyNames.map((technology) => <li key={technology}>{technology}</li>)}
+          </ul>
+        </div>
+      ) : (
 
       <Canvas
         shadows
@@ -195,6 +231,7 @@ const TechStack = () => {
           <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
         </EffectComposer>
       </Canvas>
+      )}
     </div>
   );
 };

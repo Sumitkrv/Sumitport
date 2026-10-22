@@ -1,20 +1,29 @@
 .hover-link {
   position: relative;
-  display: flex;
+  display: block;
+  height: 1.15em;
+  line-height: 1.15;
   text-wrap: nowrap;
   overflow: hidden;
 }
 .hover-in {
   position: relative;
-  transition: 0.3s;
+  display: block;
+  transition: transform .3s ease, color .3s ease;
 }
-.hover-in div {
-  display: flex;
+.hover-label {
+  display: block;
+}
+.hover-label-copy {
   position: absolute;
   top: 100%;
   left: 0;
 }
 .hover-link:hover .hover-in {
-  transform: translateY(-100%);
+  transform: translateY(-1.15em);
   color: var(--accentColor);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-in { transition-duration: .01ms; }
 }

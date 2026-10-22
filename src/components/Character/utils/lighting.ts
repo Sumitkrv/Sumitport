@@ -14,29 +14,42 @@ const isEmissiveOpacityMaterial = (
 };
 
 const setLighting = (scene: THREE.Scene) => {
-  const directionalLight = new THREE.DirectionalLight(0x5eead4, 0);
-  directionalLight.intensity = 0;
-  directionalLight.position.set(-0.47, -0.32, -1);
-  directionalLight.castShadow = true;
-  directionalLight.shadow.mapSize.width = 1024;
-  directionalLight.shadow.mapSize.height = 1024;
-  directionalLight.shadow.camera.near = 0.5;
-  directionalLight.shadow.camera.far = 50;
+  const ambientLight = new THREE.HemisphereLight(0xdce8ff, 0x13141f, 0.66);
+  scene.add(ambientLight);
+
+  const keyLight = new THREE.DirectionalLight(0xf1f5fa, 0);
+  keyLight.position.set(-5, 8, 9);
+  scene.add(keyLight);
+
+  const directionalLight = new THREE.DirectionalLight(0x51e3d1, 0);
+  directionalLight.position.set(-5, 4, -6);
   scene.add(directionalLight);
+
+  const lavenderLight = new THREE.DirectionalLight(0xc9a7f5, 0.28);
+  lavenderLight.position.set(6, 3, -4);
+  scene.add(lavenderLight);
 
   const pointLight = new THREE.PointLight(0x22d3ee, 0, 100, 3);
   pointLight.position.set(3, 12, 4);
   pointLight.castShadow = true;
   scene.add(pointLight);
 
+  let environment: THREE.DataTexture | null = null;
+  let disposed = false;
+  let lightsEnabled = false;
   new RGBELoader()
     .setPath("/models/")
     .load("char_enviorment.hdr?v=2", function (texture) {
+      if (disposed) {
+        texture.dispose();
+        return;
+      }
       texture.mapping = THREE.EquirectangularReflectionMapping;
+      environment = texture;
       scene.environment = texture;
-      scene.environmentIntensity = 0;
+      scene.environmentIntensity = lightsEnabled ? 0.64 : 0;
       scene.environmentRotation.set(5.76, 85.85, 1);
-    });
+    }, undefined, () => undefined);
 
   function setPointLight(screenLight: THREE.Object3D | null) {
     if (!(screenLight instanceof THREE.Mesh)) {
@@ -54,7 +67,7 @@ const setLighting = (scene: THREE.Scene) => {
     }
 
     if (material.opacity > 0.9) {
-      pointLight.intensity = material.emissiveIntensity * 20;
+      pointLight.intensity = Math.min(material.emissiveIntensity * 2.5, 3);
       return;
     }
 
@@ -62,14 +75,28 @@ const setLighting = (scene: THREE.Scene) => {
   }
   const duration = 2;
   const ease = "power2.inOut";
-  function turnOnLights() {
+  function turnOnLights(reducedMotion = false) {
+    lightsEnabled = true;
+    if (reducedMotion) {
+      scene.environmentIntensity = environment ? 0.64 : 0;
+      directionalLight.intensity = 0.82;
+      keyLight.intensity = 1.05;
+      const rim = document.querySelector<HTMLElement>(".character-rim");
+      if (rim) rim.style.opacity = ".65";
+      return;
+    }
     gsap.to(scene, {
       environmentIntensity: 0.64,
       duration: duration,
       ease: ease,
     });
     gsap.to(directionalLight, {
-      intensity: 1,
+      intensity: 0.82,
+      duration,
+      ease,
+    });
+    gsap.to(keyLight, {
+      intensity: 1.05,
       duration: duration,
       ease: ease,
     });
@@ -81,7 +108,17 @@ const setLighting = (scene: THREE.Scene) => {
     });
   }
 
-  return { setPointLight, turnOnLights };
+  function dispose() {
+    disposed = true;
+    gsap.killTweensOf([scene, keyLight, directionalLight]);
+    const rim = document.querySelector(".character-rim");
+    if (rim) gsap.killTweensOf(rim);
+    if (scene.environment === environment) scene.environment = null;
+    environment?.dispose();
+    [ambientLight, keyLight, directionalLight, lavenderLight, pointLight].forEach((light) => scene.remove(light));
+  }
+
+  return { setPointLight, turnOnLights, dispose };
 };
 
 export default setLighting;

@@ -3,27 +3,34 @@
   max-width: var(--cMaxWidth);
   width: var(--cWidth);
   bottom: 0;
-  z-index: 99;
+  z-index: var(--layer-social);
   left: 50%;
   transform: translateX(-50%);
+  pointer-events: none;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+.icons-section:not(.icons-section-hero) {
+  opacity: 0;
+  visibility: hidden;
 }
 .social-icons {
   position: absolute;
   left: -20px;
   bottom: 20px;
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 8px;
-  z-index: 999;
+  z-index: 1;
   padding: 10px;
+  pointer-events: auto;
 }
 .social-icons:hover {
   transition: 0.3s;
   color: var(--backgroundColor);
 }
 .social-icons a:hover {
-  color: var(--backgroundColor);
-  /* transform: scale(1.2); */
+  color: var(--accentColor);
+  transform: translate(-50%, -50%) scale(1.12);
 }
 .social-icons span {
   width: 50px;
@@ -45,7 +52,7 @@
 }
 .resume-button {
   position: absolute;
-  z-index: 99;
+  z-index: 1;
   display: flex;
   gap: 5px;
   bottom: 40px;
@@ -56,9 +63,10 @@
   font-size: 15px;
   line-height: 15px;
   font-weight: 600;
-  color: #5e5e5e;
+  color: #a0a6b4;
   cursor: pointer;
-  transition: 0.5s;
+  pointer-events: auto;
+  transition: color .3s ease, opacity .3s ease, visibility .3s ease;
   transform-origin: left bottom;
   transform: translateX(100%) rotateZ(-90deg);
 }
@@ -72,15 +80,6 @@ div.resume-button span {
   display: flex;
   align-items: center;
 }
-.check-line {
-  position: fixed;
-  top: 655px;
-  left: 0;
-  height: 1px;
-  background-color: #ffffff;
-  width: 100%;
-  z-index: 99999;
-}
 @media only screen and (min-width: 900px) {
   .social-icons {
     display: flex;
@@ -89,6 +88,12 @@ div.resume-button span {
   .social-icons a {
     font-size: 28px;
   }
+}
+@media only screen and (max-width: 767px) {
+  .social-icons { left: 0; bottom: 45px; flex-direction: row; gap: 3px; padding: 0; }
+  .social-icons span { width: 34px; height: 34px; }
+  .social-icons a { font-size: 18px; }
+  .resume-button { display: none; }
 }
 @media only screen and (min-width: 768px) {
   .resume-button {

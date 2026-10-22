@@ -7,10 +7,11 @@
   height: var(--size);
   border-radius: 50px;
   pointer-events: none;
-  z-index: 99;
-  background-color: #e6c3ff;
-  box-shadow: 0px 0px 30px 0px rgb(175, 131, 255);
-  mix-blend-mode: difference;
+  z-index: var(--layer-cursor);
+  background-color: #c9a7f5;
+  box-shadow: 0 0 16px rgba(201, 167, 245, .24);
+  mix-blend-mode: screen;
+  opacity: 0;
   transition: top 0.3s ease-out, left 0.3s ease-out, width 0.3s ease-out,
     height 0.3s ease-out;
 }
@@ -18,16 +19,20 @@
   top: 10px;
   left: 10px;
   height: calc(var(--cursorH) - 20px);
+  opacity: .28;
   transition: all 0.5s ease-out, height 0.5s ease-in-out;
 }
+.cursor-visible { opacity: .42; }
+.cursor-visible.cursor-icons { opacity: .28; }
 .cursor-disable {
   --size: 0px;
 }
 @media only screen and (min-width: 600px) {
   .cursor-main {
-    --size: 50px;
+    --size: 28px;
   }
   .cursor-disable {
     --size: 0px;
   }
 }
+@media (hover: none), (pointer: coarse) { .cursor-main { display: none; } }

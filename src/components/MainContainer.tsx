@@ -20,14 +20,26 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   );
 
   useEffect(() => {
+    let viewportWidth = window.innerWidth;
+    let resizeTimer = 0;
+    let disposeSplitText = setSplitText();
+
     const resizeHandler = () => {
-      setSplitText();
-      setIsDesktopView(window.innerWidth > 1024);
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => {
+        if (window.innerWidth !== viewportWidth) {
+          viewportWidth = window.innerWidth;
+          disposeSplitText();
+          disposeSplitText = setSplitText();
+        }
+        setIsDesktopView(window.innerWidth > 1024);
+      }, 120);
     };
-    resizeHandler();
     window.addEventListener("resize", resizeHandler);
     return () => {
+      window.clearTimeout(resizeTimer);
       window.removeEventListener("resize", resizeHandler);
+      disposeSplitText();
     };
   }, []);
 

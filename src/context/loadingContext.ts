@@ -3,7 +3,7 @@ import { createContext, useContext } from "react";
 export interface LoadingType {
   isLoading: boolean;
   setIsLoading: (state: boolean) => void;
-  setLoading: (percent: number) => void;
+  markReady: () => void;
 }
 
 export const LoadingContext = createContext<LoadingType | null>(null);

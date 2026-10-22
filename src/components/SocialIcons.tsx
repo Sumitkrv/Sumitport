@@ -1,69 +1,41 @@
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   FaGithub,
   FaLinkedinIn,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
-import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
+  const iconsRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const social = document.getElementById("social") as HTMLElement;
+    const container = iconsRef.current;
+    const hero = document.getElementById("landingDiv");
+    if (!container || !hero) return;
 
-    social.querySelectorAll("span").forEach((item) => {
-      const elem = item as HTMLElement;
-      const link = elem.querySelector("a") as HTMLElement;
-
-      const rect = elem.getBoundingClientRect();
-      let mouseX = rect.width / 2;
-      let mouseY = rect.height / 2;
-      let currentX = 0;
-      let currentY = 0;
-
-      const updatePosition = () => {
-        currentX += (mouseX - currentX) * 0.1;
-        currentY += (mouseY - currentY) * 0.1;
-
-        link.style.setProperty("--siLeft", `${currentX}px`);
-        link.style.setProperty("--siTop", `${currentY}px`);
-
-        requestAnimationFrame(updatePosition);
-      };
-
-      const onMouseMove = (e: MouseEvent) => {
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        if (x < 40 && x > 10 && y < 40 && y > 5) {
-          mouseX = x;
-          mouseY = y;
-        } else {
-          mouseX = rect.width / 2;
-          mouseY = rect.height / 2;
-        }
-      };
-
-      document.addEventListener("mousemove", onMouseMove);
-
-      updatePosition();
-
-      return () => {
-        elem.removeEventListener("mousemove", onMouseMove);
-      };
+    const trigger = ScrollTrigger.create({
+      trigger: hero,
+      start: "top top",
+      end: "bottom top",
+      onUpdate: (self) => container.classList.toggle("icons-section-hero", self.progress < 0.5),
+      onRefresh: (self) => container.classList.toggle("icons-section-hero", self.progress < 0.5),
     });
+    return () => trigger.kill();
   }, []);
 
   return (
-    <div className="icons-section">
+    <div className="icons-section icons-section-hero" ref={iconsRef}>
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/Sumitkrv" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <a href="https://github.com/Sumitkrv" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com/in/sumit-thakur-80ba72278" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <a href="https://www.linkedin.com/in/sumit-thakur-80ba72278" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
             <FaLinkedinIn />
           </a>
         </span>
