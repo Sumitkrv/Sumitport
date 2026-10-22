@@ -1,12 +1,28 @@
 import * as THREE from "three";
 import { GLTF } from "three-stdlib";
 import { eyebrowBoneNames, typingBoneNames } from "../../../data/boneData";
+import { createHeroArmPose } from "./heroArmPose";
 
 const setAnimations = (gltf: GLTF, shouldAnimate = true) => {
   const character = gltf.scene;
+  const heroArmPose = createHeroArmPose(character);
   const mixer = new THREE.AnimationMixer(character);
   let blinkTimeout: number | undefined;
   const hoverCleanups: Array<() => void> = [];
+
+  // Establish the real GLTF's settled, forward-facing pose before the first
+  // visible frame. The intro clip begins with the cap shading the eyes; playing
+  // it after the loader exits exposes that unfinished pose as the Hero image.
+  const introClip = THREE.AnimationClip.findByName(gltf.animations, "introAnimation");
+  if (introClip) {
+    const action = mixer.clipAction(introClip);
+    action.setLoop(THREE.LoopOnce, 1);
+    action.clampWhenFinished = true;
+    action.play();
+    mixer.update(introClip.duration);
+    action.paused = true;
+  }
+
   if (shouldAnimate) {
     const clipNames = ["key1", "key2", "key5", "key6"];
     clipNames.forEach((name) => {
@@ -26,17 +42,8 @@ const setAnimations = (gltf: GLTF, shouldAnimate = true) => {
       typingAction.timeScale = 1.2;
     }
   }
-  function startIntro() {
+  function startSafeIdle() {
     if (!shouldAnimate) return;
-    const introClip = gltf.animations.find(
-      (clip) => clip.name === "introAnimation"
-    );
-    if (introClip) {
-      const introAction = mixer.clipAction(introClip);
-      introAction.setLoop(THREE.LoopOnce, 1);
-      introAction.clampWhenFinished = true;
-      introAction.reset().play();
-    }
     const blink = gltf.animations.find((clip) => clip.name === "Blink");
     if (blink) {
       blinkTimeout = window.setTimeout(() => mixer.clipAction(blink).play().fadeIn(0.5), 2500);
@@ -81,12 +88,13 @@ const setAnimations = (gltf: GLTF, shouldAnimate = true) => {
     return cleanup;
   }
   const dispose = () => {
+    heroArmPose.restore();
     if (blinkTimeout) window.clearTimeout(blinkTimeout);
     hoverCleanups.forEach((cleanup) => cleanup());
     mixer.stopAllAction();
     mixer.uncacheRoot(character);
   };
-  return { mixer, startIntro, hover, dispose };
+  return { mixer, startSafeIdle, hover, dispose, restoreHeroPose: heroArmPose.restore, applyHeroPose: heroArmPose.apply };
 };
 
 const createBoneAction = (

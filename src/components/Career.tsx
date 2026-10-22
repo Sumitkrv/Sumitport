@@ -88,62 +88,78 @@ const careerEntries: CareerEntry[] = [
 const Career = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const entryRefs = useRef<(HTMLLIElement | null)[]>([]);
-  const activeIndexRef = useRef(0);
+  const listRef = useRef<HTMLOListElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const activateEntry = (index: number) => {
-    activeIndexRef.current = index;
     setActiveIndex((current) => current === index ? current : index);
   };
 
   useLayoutEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
+    const list = listRef.current;
+    if (!list) return;
+    let nodeOffsets: number[] = [];
+    let railStart = 0;
+    let railLength = 1;
+    const measure = () => {
+      const top = list.getBoundingClientRect().top;
+      nodeOffsets = entryRefs.current.map(entry => {
+        const node = entry?.querySelector(".career-node")?.getBoundingClientRect();
+        return node ? node.top + node.height / 2 - top : 0;
+      });
+      railStart = nodeOffsets[0] ?? 0;
+      railLength = Math.max(1, (nodeOffsets[nodeOffsets.length - 1] ?? railStart) - railStart);
+      list.style.setProperty("--rail-start", `${railStart}px`);
+      list.style.setProperty("--rail-length", `${railLength}px`);
+    };
+    const sync = (progress: number) => {
+      section.style.setProperty("--career-progress", progress.toFixed(5));
+      const point = railStart + progress * railLength;
+      let nearest = 0;
+      nodeOffsets.forEach((offset, index) => {
+        if (Math.abs(offset - point) < Math.abs(nodeOffsets[nearest] - point)) nearest = index;
+      });
+      activateEntry(nearest);
+    };
+    measure();
     const context = gsap.context(() => {
       ScrollTrigger.create({
-        trigger: section,
-        start: "top 76%",
-        end: "bottom 42%",
+        id: "career-rail",
+        trigger: list,
+        start: () => `top+=${railStart} 48%`,
+        end: () => `top+=${railStart + railLength} 48%`,
         invalidateOnRefresh: true,
-        onUpdate: (self) => {
-          if (!reducedMotion) section.style.setProperty("--career-progress", self.progress.toFixed(4));
-        },
-        onRefresh: (self) => {
-          if (!reducedMotion) section.style.setProperty("--career-progress", self.progress.toFixed(4));
-          const isInView = section.getBoundingClientRect().bottom > 0 && section.getBoundingClientRect().top < window.innerHeight;
-          if (!isInView) return;
-          const focusLine = window.innerHeight * 0.48;
-          let nearestIndex = 0;
-          let nearestDistance = Number.POSITIVE_INFINITY;
-          entryRefs.current.forEach((entry, index) => {
-            if (!entry) return;
-            const rect = entry.getBoundingClientRect();
-            const distance = Math.abs(rect.top + rect.height / 2 - focusLine);
-            if (distance < nearestDistance) {
-              nearestDistance = distance;
-              nearestIndex = index;
-            }
-          });
-          activateEntry(nearestIndex);
-        },
-      });
-
-      entryRefs.current.forEach((entry, index) => {
-        if (!entry) return;
-        ScrollTrigger.create({
-          trigger: entry,
-          start: "top 54%",
-          end: "bottom 54%",
-          invalidateOnRefresh: true,
-          onEnter: () => activateEntry(index),
-          onEnterBack: () => activateEntry(index),
-        });
+        onRefreshInit: measure,
+        onUpdate: self => sync(self.progress),
+        onRefresh: self => sync(self.progress),
       });
     }, section);
-
-    return () => context.revert();
+    // Content is always readable. These one-time classes only add a short reveal.
+    const reveal = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("career-entered");
+        reveal.unobserve(entry.target);
+      });
+    }, { threshold: .12 });
+    section.querySelectorAll(".career-header, .career-entry").forEach(el => reveal.observe(el));
+    let resizeTimer = 0;
+    let lastSize = "";
+    const resize = new ResizeObserver(([entry]) => {
+      const size = `${entry.contentRect.width}:${entry.contentRect.height}`;
+      if (size === lastSize) return;
+      lastSize = size;
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(() => ScrollTrigger.refresh(true), 120);
+    });
+    resize.observe(list);
+    return () => {
+      window.clearTimeout(resizeTimer);
+      resize.disconnect(); reveal.disconnect(); context.revert();
+      section.style.removeProperty("--career-progress");
+    };
   }, []);
 
   return (
@@ -155,14 +171,15 @@ const Career = () => {
     >
       <div className="career-container">
         <header className="career-header">
-          <p className="career-eyebrow"><span aria-hidden="true" /> CAREER / EXPERIENCE</p>
+          <p className="career-eyebrow"><span aria-hidden="true" /> 03 / PROFESSIONAL JOURNEY</p>
           <div className="career-heading-row">
             <h2 id="career-title">THE JOURNEY<br /><span>SO FAR.</span></h2>
-            <p className="career-intro">Building meaningful software,<br className="career-intro-break" /> one challenge at a time.</p>
+            <p className="career-intro">From building foundations to engineering real-world software — a journey shaped by learning, problem-solving, and practical development.</p>
           </div>
         </header>
 
-        <ol className="career-list" aria-label="Career and education timeline">
+        <div className="career-index" aria-hidden="true"><span>EXPERIENCE & EDUCATION</span><span>2023 — PRESENT</span></div>
+        <ol ref={listRef} className="career-list" aria-label="Career and education, most recent start date first">
           {careerEntries.map((entry, index) => (
             <li
               className={`career-entry${activeIndex === index ? " is-active" : ""}`}
@@ -171,8 +188,8 @@ const Career = () => {
               ref={(element) => { entryRefs.current[index] = element; }}
             >
               <div className="career-identity">
-                <p className="career-kicker"><span>{String(index + 1).padStart(2, "0")}</span>{entry.kind}</p>
-                <button
+                <p className="career-kicker"><span>{String(index + 1).padStart(2, "0")}</span>{entry.end === "Present" ? "CURRENT EXPERIENCE" : entry.kind}</p>
+                <h3 className="career-role-heading"><button
                   className="career-select"
                   type="button"
                   aria-pressed={activeIndex === index}
@@ -182,7 +199,7 @@ const Career = () => {
                   <span className="career-role-title">{entry.title}</span>
                   <span className="career-company">{entry.organization}</span>
                   <span className="career-direction" aria-hidden="true">↗</span>
-                </button>
+                </button></h3>
               </div>
 
               <div className="career-marker" aria-hidden="true">
@@ -210,6 +227,7 @@ const Career = () => {
             </li>
           ))}
         </ol>
+        <footer className="career-ending"><span aria-hidden="true" /><p>Always building. Always learning.</p><span className="career-ending-index" aria-hidden="true">THE JOURNEY CONTINUES</span></footer>
       </div>
     </section>
   );

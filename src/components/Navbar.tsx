@@ -3,8 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { gsap } from "gsap";
 import HoverLinks from "./HoverLinks";
-import { getSmoother, setSmoother } from "./utils/smoother";
+import { getScrollOffset, scrollToSection, setScrollLocked, setSmoother } from "./utils/smoother";
 import "./styles/Navbar.css";
+import { useLoading } from "../context/loadingContext";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 
@@ -17,6 +18,7 @@ const links = [
 ];
 
 const Navbar = () => {
+  const { isLoading } = useLoading();
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,31 +39,37 @@ const Navbar = () => {
         ignoreMobileResize: true,
       });
       setSmoother(smoother);
-      smoother.paused(true);
     } catch {
       setSmoother(null);
     }
 
-    const onScroll = () => setScrolled(window.scrollY > 24 || Boolean(getSmoother()?.scrollTop() && getSmoother()!.scrollTop() > 24));
-    window.addEventListener("scroll", onScroll, { passive: true });
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible) setActiveSection(visible.target.id);
-    }, { rootMargin: "-20% 0px -60% 0px", threshold: [0, .15, .35, .6] });
-    links.forEach(({ id }) => {
-      const section = document.getElementById(id);
-      if (section) observer.observe(section);
+    const updateNavigation = () => {
+      const offset = getScrollOffset() + 1;
+      const active = links.find(({ id }) => {
+        const rect = document.getElementById(id)?.getBoundingClientRect();
+        return rect && rect.top <= offset && rect.bottom > offset;
+      });
+      const atBottom = window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+      setActiveSection(atBottom ? "contact" : active?.id ?? "");
+      setScrolled((smoother?.scrollTop() ?? window.scrollY) > 24);
+    };
+    const navigationTrigger = ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      onUpdate: updateNavigation,
+      onRefresh: updateNavigation,
     });
+    updateNavigation();
     let refreshFrame = 0;
     const onResize = () => {
       cancelAnimationFrame(refreshFrame);
-      refreshFrame = requestAnimationFrame(() => ScrollSmoother.refresh(true));
+      if (window.innerWidth >= 720) setMenuOpen(false);
+      refreshFrame = requestAnimationFrame(() => ScrollTrigger.refresh());
     };
     window.addEventListener("resize", onResize);
 
     return () => {
-      observer.disconnect();
-      window.removeEventListener("scroll", onScroll);
+      navigationTrigger.kill();
       window.removeEventListener("resize", onResize);
       cancelAnimationFrame(refreshFrame);
       smoother?.kill();
@@ -70,10 +78,40 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    if (isLoading) return;
+    let cancelled = false;
+    let frame = requestAnimationFrame(() => {
+      ScrollTrigger.refresh();
+      scrollToSection(window.location.hash.slice(1), false);
+    });
+    const restoreHash = () => scrollToSection(window.location.hash.slice(1), false);
+    window.addEventListener("hashchange", restoreHash);
+    void document.fonts.ready.then(() => {
+      if (!cancelled) {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => {
+          ScrollTrigger.refresh();
+          restoreHash();
+        });
+      }
+    });
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", restoreHash);
+    };
+  }, [isLoading]);
+
+  useEffect(() => {
     if (!menuOpen) return;
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    menuRef.current?.querySelector<HTMLElement>("a")?.focus();
+    const menuButton = menuButtonRef.current;
+    setScrollLocked("menu", true);
+    const background = Array.from(document.querySelectorAll<HTMLElement>("#smooth-wrapper, .header, .icons-section"));
+    const previousInert = background.map((element) => element.inert);
+    background.forEach((element) => { element.inert = true; });
+    let focusFrame = requestAnimationFrame(() => {
+      focusFrame = requestAnimationFrame(() => menuRef.current?.querySelector<HTMLElement>("a")?.focus({ preventScroll: true }));
+    });
     const onKeyDown = (event: globalThis.KeyboardEvent) => {
       if (event.key === "Escape") {
         setMenuOpen(false);
@@ -82,7 +120,10 @@ const Navbar = () => {
     };
     document.addEventListener("keydown", onKeyDown);
     return () => {
-      document.body.style.overflow = previousOverflow;
+      cancelAnimationFrame(focusFrame);
+      setScrollLocked("menu", false);
+      background.forEach((element, index) => { element.inert = previousInert[index]; });
+      menuButton?.focus();
       document.removeEventListener("keydown", onKeyDown);
     };
   }, [menuOpen]);
@@ -91,10 +132,10 @@ const Navbar = () => {
     const target = document.getElementById(id);
     if (!target) return;
     event.preventDefault();
-    const smoother = getSmoother();
-    const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (smoother) smoother.scrollTo(target, smooth, "top 100px");
-    else target.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+    // Release the menu lock before asking ScrollSmoother to navigate.
+    setScrollLocked("menu", false);
+    if (menuOpen) ScrollTrigger.refresh();
+    scrollToSection(id);
     window.history.replaceState(null, "", `#${id}`);
     if (menuOpen) {
       setMenuOpen(false);

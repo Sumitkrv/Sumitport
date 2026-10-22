@@ -1,0 +1,338 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 800
+      },
+      {
+        "id": "about",
+        "top": 800,
+        "bottom": 1764
+      },
+      {
+        "id": "expertise",
+        "top": 1764,
+        "bottom": 3205
+      },
+      {
+        "id": "career",
+        "top": 3205,
+        "bottom": 5575
+      },
+      {
+        "id": "work",
+        "top": 5575,
+        "bottom": 6509
+      },
+      {
+        "id": "achievements",
+        "top": 6509,
+        "bottom": 7659
+      },
+      {
+        "id": "skills",
+        "top": 7659,
+        "bottom": 9676
+      },
+      {
+        "id": "contact",
+        "top": 9726,
+        "bottom": 10469
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 844
+      },
+      {
+        "id": "about",
+        "top": 844,
+        "bottom": 1726
+      },
+      {
+        "id": "expertise",
+        "top": 1726,
+        "bottom": 3143
+      },
+      {
+        "id": "career",
+        "top": 3143,
+        "bottom": 5374
+      },
+      {
+        "id": "work",
+        "top": 5374,
+        "bottom": 6307
+      },
+      {
+        "id": "achievements",
+        "top": 6307,
+        "bottom": 7376
+      },
+      {
+        "id": "skills",
+        "top": 7376,
+        "bottom": 9303
+      },
+      {
+        "id": "contact",
+        "top": 9353,
+        "bottom": 10097
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 1024
+      },
+      {
+        "id": "about",
+        "top": 1024,
+        "bottom": 1966
+      },
+      {
+        "id": "expertise",
+        "top": 1966,
+        "bottom": 3446
+      },
+      {
+        "id": "career",
+        "top": 3446,
+        "bottom": 5236
+      },
+      {
+        "id": "work",
+        "top": 5236,
+        "bottom": 6139
+      },
+      {
+        "id": "achievements",
+        "top": 6139,
+        "bottom": 7198
+      },
+      {
+        "id": "skills",
+        "top": 7198,
+        "bottom": 8810
+      },
+      {
+        "id": "contact",
+        "top": 8860,
+        "bottom": 9555
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 900
+      },
+      {
+        "id": "about",
+        "top": 900,
+        "bottom": 1774
+      },
+      {
+        "id": "expertise",
+        "top": 1774,
+        "bottom": 2952
+      },
+      {
+        "id": "career",
+        "top": 2952,
+        "bottom": 4639
+      },
+      {
+        "id": "work",
+        "top": 4639,
+        "bottom": 5712
+      },
+      {
+        "id": "achievements",
+        "top": 5712,
+        "bottom": 6506
+      },
+      {
+        "id": "skills",
+        "top": 6506,
+        "bottom": 7558
+      },
+      {
+        "id": "contact",
+        "top": 7658,
+        "bottom": 8046
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 900,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 900
+      },
+      {
+        "id": "about",
+        "top": 900,
+        "bottom": 1800
+      },
+      {
+        "id": "expertise",
+        "top": 1800,
+        "bottom": 2700
+      },
+      {
+        "id": "career",
+        "top": 2700,
+        "bottom": 4744
+      },
+      {
+        "id": "work",
+        "top": 4744,
+        "bottom": 5515
+      },
+      {
+        "id": "achievements",
+        "top": 5515,
+        "bottom": 6309
+      },
+      {
+        "id": "skills",
+        "top": 6309,
+        "bottom": 7361
+      },
+      {
+        "id": "contact",
+        "top": 8411,
+        "bottom": 8799
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 1000
+      },
+      {
+        "id": "about",
+        "top": 1000,
+        "bottom": 1980
+      },
+      {
+        "id": "expertise",
+        "top": 1980,
+        "bottom": 2980
+      },
+      {
+        "id": "career",
+        "top": 2980,
+        "bottom": 5010
+      },
+      {
+        "id": "work",
+        "top": 5010,
+        "bottom": 5839
+      },
+      {
+        "id": "achievements",
+        "top": 5839,
+        "bottom": 6628
+      },
+      {
+        "id": "skills",
+        "top": 6628,
+        "bottom": 7635
+      },
+      {
+        "id": "contact",
+        "top": 8785,
+        "bottom": 9218
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "overflow": 0,
+    "loader": false,
+    "sections": [
+      {
+        "id": "landingDiv",
+        "top": 0,
+        "bottom": 1080
+      },
+      {
+        "id": "about",
+        "top": 1080,
+        "bottom": 2060
+      },
+      {
+        "id": "expertise",
+        "top": 2060,
+        "bottom": 3140
+      },
+      {
+        "id": "career",
+        "top": 3140,
+        "bottom": 5170
+      },
+      {
+        "id": "work",
+        "top": 5170,
+        "bottom": 5999
+      },
+      {
+        "id": "achievements",
+        "top": 5999,
+        "bottom": 6788
+      },
+      {
+        "id": "skills",
+        "top": 6788,
+        "bottom": 7795
+      },
+      {
+        "id": "contact",
+        "top": 9025,
+        "bottom": 9473
+      }
+    ]
+  }
+]

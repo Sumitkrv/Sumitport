@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import { DRACOLoader, GLTF, GLTFLoader } from "three-stdlib";
-import { setCharTimeline } from "../../utils/GsapScroll";
 import { decryptFile } from "./decrypt";
 
 const setCharacter = (
@@ -14,7 +13,6 @@ const setCharacter = (
   loader.setDRACOLoader(dracoLoader);
   let disposed = false;
   let loadedCharacter: GLTF | null = null;
-  const scrollCleanups: Array<() => void> = [];
 
   const disposeGLTF = (gltf: GLTF) => {
     gltf.scene.traverse((object) => {
@@ -76,7 +74,6 @@ const setCharacter = (
         mesh.frustumCulled = true;
       });
 
-      scrollCleanups.push(setCharTimeline(character, camera));
       loadedCharacter = gltf;
 
       const footR = character.getObjectByName("foot.R");
@@ -96,8 +93,6 @@ const setCharacter = (
 
   const dispose = () => {
     disposed = true;
-    scrollCleanups.forEach((cleanup) => cleanup());
-    scrollCleanups.length = 0;
     if (loadedCharacter) {
       scene.remove(loadedCharacter.scene);
       disposeGLTF(loadedCharacter);

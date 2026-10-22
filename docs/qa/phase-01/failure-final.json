@@ -1,0 +1,10 @@
+{
+  "chunkFailure": {
+    "loader": false,
+    "inert": false,
+    "heading": "SUMITTHAKUR",
+    "character": false
+  },
+  "blockedRequests": 1,
+  "modelFailure": "Attempted with software WebGL; browser renderer stalled before result could be read. Unverified."
+}

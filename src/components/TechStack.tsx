@@ -68,15 +68,16 @@ function SphereGeo({
   isActive,
 }: SphereProps) {
   const api = useRef<RapierRigidBody | null>(null);
+  const force = useMemo(() => new THREE.Vector3(), []);
 
   useFrame((_state, delta) => {
-    if (!isActive) return;
+    if (!isActive || !api.current) return;
     delta = Math.min(0.1, delta);
     const impulse = vec
-      .copy(api.current!.translation())
+      .copy(api.current.translation())
       .normalize()
       .multiply(
-        new THREE.Vector3(
+        force.set(
           -50 * delta * scale,
           -150 * delta * scale,
           -50 * delta * scale
@@ -120,11 +121,12 @@ type PointerProps = {
 
 function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
   const ref = useRef<RapierRigidBody>(null);
+  const target = useMemo(() => new THREE.Vector3(), []);
 
   useFrame(({ pointer, viewport }) => {
     if (!isActive) return;
     const targetVec = vec.lerp(
-      new THREE.Vector3(
+      target.set(
         (pointer.x * viewport.width) / 2,
         (pointer.y * viewport.height) / 2,
         0
@@ -148,7 +150,15 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
 
 const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
-  const hasWebGL = useMemo(supportsWebGL, []);
+  const reducedMotion = useMemo(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches, []);
+  const hasWebGL = useMemo(() => !reducedMotion && supportsWebGL(), [reducedMotion]);
+  const [pageVisible, setPageVisible] = useState(!document.hidden);
+  const rendering = isActive && pageVisible;
+  useEffect(() => {
+    const onVisibility = () => setPageVisible(!document.hidden);
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
+  }, []);
 
   useEffect(() => {
     if (!hasWebGL) return;
@@ -156,11 +166,10 @@ const TechStack = () => {
       trigger: ".techstack",
       start: "top 85%",
       end: "bottom 15%",
-      onEnter: () => setIsActive(true),
-      onEnterBack: () => setIsActive(true),
-      onLeave: () => setIsActive(false),
-      onLeaveBack: () => setIsActive(false),
+      onToggle: (self) => setIsActive(self.isActive),
+      onRefresh: (self) => setIsActive(self.isActive),
     });
+    setIsActive(trigger.isActive);
     return () => trigger.kill();
   }, [hasWebGL]);
 
@@ -181,13 +190,15 @@ const TechStack = () => {
     );
   }, [hasWebGL]);
 
+  useEffect(() => () => materials.forEach((material) => material.dispose()), [materials]);
+
   return (
     <div className="techstack">
       <h2> My Techstack</h2>
 
       {!hasWebGL ? (
         <div className="techstack-fallback" aria-label="Technologies in my stack">
-          <p>Interactive 3D view is unavailable in this browser.</p>
+          <p>{reducedMotion ? "Technologies in my stack" : "Interactive 3D view is unavailable in this browser."}</p>
           <ul>
             {technologyNames.map((technology) => <li key={technology}>{technology}</li>)}
           </ul>
@@ -195,6 +206,9 @@ const TechStack = () => {
       ) : (
 
       <Canvas
+        dpr={[1, 1.5]}
+        frameloop={rendering ? "always" : "demand"}
+        aria-label="Interactive technology spheres"
         shadows
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
@@ -211,7 +225,7 @@ const TechStack = () => {
           shadow-mapSize={[512, 512]}
         />
         <directionalLight position={[0, 5, -4]} intensity={2} />
-        <Physics gravity={[0, 0, 0]}>
+        <Physics gravity={[0, 0, 0]} paused={!rendering}>
           <Pointer isActive={isActive} />
           {spheres.map((props, i) => (
             <SphereGeo

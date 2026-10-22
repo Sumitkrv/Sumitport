@@ -1,0 +1,22 @@
+{
+  "url": "http://127.0.0.1:5175/",
+  "title": "Sumit Thakur - Software Developer",
+  "viewport": [
+    390,
+    844
+  ],
+  "loader": false,
+  "inert": false,
+  "horizontalOverflow": 0,
+  "blockedCharacterChunk": "loader exits and main becomes interactive",
+  "preloaderEditorial": {
+    "lineWidths": [
+      327,
+      327
+    ],
+    "containerWidths": [
+      327,
+      327
+    ]
+  }
+}

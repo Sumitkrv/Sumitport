@@ -1,0 +1,281 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "0.965",
+    "canvasBounds": {
+      "x": 152.5,
+      "y": 0,
+      "width": 1600,
+      "height": 1080,
+      "top": 0,
+      "right": 1752.5,
+      "bottom": 1080,
+      "left": 152.5
+    },
+    "rimBounds": {
+      "x": 688.5,
+      "y": 874.3338623046875,
+      "width": 528,
+      "height": 528,
+      "top": 874.3338623046875,
+      "right": 1216.5,
+      "bottom": 1402.3338623046875,
+      "left": 688.5
+    },
+    "docScrollWidth": 1905,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "1",
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "rimBounds": {
+      "x": 448.5,
+      "y": 771,
+      "width": 528,
+      "height": 528,
+      "top": 771,
+      "right": 976.5,
+      "bottom": 1299,
+      "left": 448.5
+    },
+    "docScrollWidth": 1425,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      1280,
+      800
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "1",
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1265,
+      "height": 800,
+      "top": 0,
+      "right": 1265,
+      "bottom": 800,
+      "left": 0
+    },
+    "rimBounds": {
+      "x": 395.94842529296875,
+      "y": 687.046875,
+      "width": 473.1031494140625,
+      "height": 473.1031494140625,
+      "top": 687.046875,
+      "right": 869.0515747070312,
+      "bottom": 1160.1500244140625,
+      "left": 395.94842529296875
+    },
+    "docScrollWidth": 1265,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "0",
+    "canvasBounds": {
+      "x": 104.5,
+      "y": 355.71875,
+      "width": 800,
+      "height": 380,
+      "top": 355.71875,
+      "right": 904.5,
+      "bottom": 735.71875,
+      "left": 104.5
+    },
+    "rimBounds": {
+      "x": 411,
+      "y": 508.21875,
+      "width": 187,
+      "height": 187,
+      "top": 508.21875,
+      "right": 598,
+      "bottom": 695.21875,
+      "left": 411
+    },
+    "docScrollWidth": 1009,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "0",
+    "canvasBounds": {
+      "x": 40,
+      "y": 324.15625,
+      "width": 673,
+      "height": 510.84375,
+      "top": 324.15625,
+      "right": 713,
+      "bottom": 835,
+      "left": 40
+    },
+    "rimBounds": {
+      "x": 283,
+      "y": 515.90625,
+      "width": 187,
+      "height": 187,
+      "top": 515.90625,
+      "right": 470,
+      "bottom": 702.90625,
+      "left": 283
+    },
+    "docScrollWidth": 753,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "0.6676",
+    "canvasBounds": {
+      "x": 20,
+      "y": 344.140625,
+      "width": 350,
+      "height": 329.859375,
+      "top": 344.140625,
+      "right": 370,
+      "bottom": 674,
+      "left": 20
+    },
+    "rimBounds": {
+      "x": 138.6476593017578,
+      "y": 506.13427734375,
+      "width": 112.70469665527344,
+      "height": 112.7047119140625,
+      "top": 506.13427734375,
+      "right": 251.35235595703125,
+      "bottom": 618.8389892578125,
+      "left": 138.6476593017578
+    },
+    "docScrollWidth": 390,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "1",
+    "canvasBounds": {
+      "x": 20,
+      "y": 334.6875,
+      "width": 320,
+      "height": 295.3125,
+      "top": 334.6875,
+      "right": 340,
+      "bottom": 630,
+      "left": 20
+    },
+    "rimBounds": {
+      "x": 127.98397827148438,
+      "y": 499.775390625,
+      "width": 104.03204345703125,
+      "height": 104.03204345703125,
+      "top": 499.775390625,
+      "right": 232.01602172851562,
+      "bottom": 603.8074340820312,
+      "left": 127.98397827148438
+    },
+    "docScrollWidth": 360,
+    "ctaClickable": true
+  },
+  {
+    "viewport": [
+      1440,
+      600
+    ],
+    "rendered": "true",
+    "canvas": true,
+    "alpha": true,
+    "contextLost": false,
+    "posterCount": 0,
+    "overflow": "clip",
+    "rimOpacity": "0",
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 600,
+      "top": 0,
+      "right": 1425,
+      "bottom": 600,
+      "left": 0
+    },
+    "rimBounds": {
+      "x": 448.5,
+      "y": 512.4000244140625,
+      "width": 528,
+      "height": 528,
+      "top": 512.4000244140625,
+      "right": 976.5,
+      "bottom": 1040.4000244140625,
+      "left": 448.5
+    },
+    "docScrollWidth": 1425,
+    "ctaClickable": true
+  }
+]

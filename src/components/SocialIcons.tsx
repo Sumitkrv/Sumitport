@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   FaGithub,
   FaLinkedinIn,
@@ -9,25 +7,9 @@ import { TbNotes } from "react-icons/tb";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
-  const iconsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = iconsRef.current;
-    const hero = document.getElementById("landingDiv");
-    if (!container || !hero) return;
-
-    const trigger = ScrollTrigger.create({
-      trigger: hero,
-      start: "top top",
-      end: "bottom top",
-      onUpdate: (self) => container.classList.toggle("icons-section-hero", self.progress < 0.5),
-      onRefresh: (self) => container.classList.toggle("icons-section-hero", self.progress < 0.5),
-    });
-    return () => trigger.kill();
-  }, []);
 
   return (
-    <div className="icons-section icons-section-hero" ref={iconsRef}>
+    <div className="icons-section icons-section-hero">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a href="https://github.com/Sumitkrv" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">

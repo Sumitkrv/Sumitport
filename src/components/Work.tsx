@@ -204,7 +204,7 @@ const Work = () => {
               onTransitionEnd={() => setIsAnimating(false)}
             >
               {projects.map((project, index) => (
-                <div className="carousel-slide" key={project.title}>
+                <div className="carousel-slide" key={project.title} aria-hidden={index !== currentIndex} ref={(element) => { if (element) element.inert = index !== currentIndex; }}>
                   <div className="carousel-content">
                     <div className="carousel-info">
                       <div className="carousel-number" aria-hidden="true">

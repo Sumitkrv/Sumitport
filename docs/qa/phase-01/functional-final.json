@@ -1,0 +1,141 @@
+{
+  "360": {
+    "focus": "#about",
+    "locked": true,
+    "wheelLocked": true,
+    "tabWrap": "Close navigation menu",
+    "escape": {
+      "open": "false",
+      "focus": "menu-toggle",
+      "inert": false
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about"
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work"
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements"
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills"
+      },
+      {
+        "hash": "#contact",
+        "top": 100,
+        "active": "#contact"
+      }
+    ]
+  },
+  "390": {
+    "focus": "#about",
+    "locked": true,
+    "wheelLocked": true,
+    "tabWrap": "Close navigation menu",
+    "escape": {
+      "open": "false",
+      "focus": "menu-toggle",
+      "inert": false
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about"
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work"
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements"
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills"
+      },
+      {
+        "hash": "#contact",
+        "top": 100,
+        "active": "#contact"
+      }
+    ]
+  },
+  "resizeMenu": {
+    "open": "false",
+    "inert": false,
+    "overflow": ""
+  },
+  "directHash": {
+    "top": 100,
+    "active": "#about"
+  },
+  "refreshHash": 100,
+  "services": [
+    [
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "false",
+      "true",
+      "false",
+      "false"
+    ],
+    [
+      "false",
+      "false",
+      "true",
+      "false"
+    ],
+    [
+      "false",
+      "false",
+      "false",
+      "true"
+    ]
+  ],
+  "career": [
+    "false",
+    "false",
+    "true",
+    "false",
+    "false"
+  ],
+  "carousel": {
+    "active": [
+      "Telemedicine Platform"
+    ],
+    "count": 14
+  },
+  "reduced": {
+    "loader": false,
+    "cursor": "0",
+    "heading": "SUMITTHAKUR",
+    "tech": "Technologies in my stackReactNext.jsNode.jsExpressMongoDBMySQLTypeScriptJavaScript",
+    "animation": "1e-05s"
+  },
+  "entranceFailure": {
+    "loader": false,
+    "inert": false,
+    "heading": "SUMITTHAKUR",
+    "opacity": "1",
+    "scroll": 800
+  }
+}

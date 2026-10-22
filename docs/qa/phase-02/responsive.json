@@ -1,0 +1,562 @@
+[
+  {
+    "width": 360,
+    "height": 800,
+    "overflow": 0,
+    "heroBottom": 800,
+    "aboutTop": 800,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 20,
+        "y": 100,
+        "width": 305,
+        "height": 143.09375,
+        "top": 100,
+        "right": 325,
+        "bottom": 243.09375,
+        "left": 20
+      },
+      {
+        "class": "landing-info",
+        "x": 20,
+        "y": 267.09375,
+        "width": 305,
+        "height": 43.59375,
+        "top": 267.09375,
+        "right": 325,
+        "bottom": 310.6875,
+        "left": 20
+      },
+      {
+        "class": "landing-stage",
+        "x": 20,
+        "y": 334.6875,
+        "width": 305,
+        "height": 295.3125,
+        "top": 334.6875,
+        "right": 325,
+        "bottom": 630,
+        "left": 20
+      },
+      {
+        "class": "landing-actions",
+        "x": 20,
+        "y": 654,
+        "width": 259,
+        "height": 46,
+        "top": 654,
+        "right": 279,
+        "bottom": 700,
+        "left": 20
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "overflow": 0,
+    "heroBottom": 844,
+    "aboutTop": 844,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 20,
+        "y": 100,
+        "width": 335,
+        "height": 146.1875,
+        "top": 100,
+        "right": 355,
+        "bottom": 246.1875,
+        "left": 20
+      },
+      {
+        "class": "landing-info",
+        "x": 20,
+        "y": 270.1875,
+        "width": 335,
+        "height": 44.515625,
+        "top": 270.1875,
+        "right": 355,
+        "bottom": 314.703125,
+        "left": 20
+      },
+      {
+        "class": "landing-stage",
+        "x": 20,
+        "y": 338.703125,
+        "width": 335,
+        "height": 335.296875,
+        "top": 338.703125,
+        "right": 355,
+        "bottom": 674,
+        "left": 20
+      },
+      {
+        "class": "landing-actions",
+        "x": 20,
+        "y": 698,
+        "width": 259,
+        "height": 46,
+        "top": 698,
+        "right": 279,
+        "bottom": 744,
+        "left": 20
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "overflow": 0,
+    "heroBottom": 1024,
+    "aboutTop": 1024,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 40,
+        "y": 125.984375,
+        "width": 322.5,
+        "height": 169.1875,
+        "top": 125.984375,
+        "right": 362.5,
+        "bottom": 295.171875,
+        "left": 40
+      },
+      {
+        "class": "landing-info",
+        "x": 533.75,
+        "y": 125,
+        "width": 179.25,
+        "height": 171.15625,
+        "top": 125,
+        "right": 713,
+        "bottom": 296.15625,
+        "left": 533.75
+      },
+      {
+        "class": "landing-stage",
+        "x": 40,
+        "y": 324.15625,
+        "width": 673,
+        "height": 510.84375,
+        "top": 324.15625,
+        "right": 713,
+        "bottom": 835,
+        "left": 40
+      },
+      {
+        "class": "landing-actions",
+        "x": 210.3125,
+        "y": 863,
+        "width": 332.375,
+        "height": 46,
+        "top": 863,
+        "right": 542.6875,
+        "bottom": 909,
+        "left": 210.3125
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "overflow": 0,
+    "heroBottom": 924.71875,
+    "aboutTop": 924.71875,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 104.5,
+        "y": 125,
+        "width": 386,
+        "height": 202.71875,
+        "top": 125,
+        "right": 490.5,
+        "bottom": 327.71875,
+        "left": 104.5
+      },
+      {
+        "class": "landing-info",
+        "x": 682.296875,
+        "y": 132.265625,
+        "width": 222.203125,
+        "height": 188.1875,
+        "top": 132.265625,
+        "right": 904.5,
+        "bottom": 320.453125,
+        "left": 682.296875
+      },
+      {
+        "class": "landing-stage",
+        "x": 104.5,
+        "y": 355.71875,
+        "width": 800,
+        "height": 380,
+        "top": 355.71875,
+        "right": 904.5,
+        "bottom": 735.71875,
+        "left": 104.5
+      },
+      {
+        "class": "landing-actions",
+        "x": 338.3125,
+        "y": 763.71875,
+        "width": 332.375,
+        "height": 46,
+        "top": 763.71875,
+        "right": 670.6875,
+        "bottom": 809.71875,
+        "left": 338.3125
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "overflow": 0,
+    "heroBottom": 800,
+    "aboutTop": 800,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 56,
+        "y": 194.875,
+        "width": 324.546875,
+        "height": 215.125,
+        "top": 194.875,
+        "right": 380.546875,
+        "bottom": 410,
+        "left": 56
+      },
+      {
+        "class": "landing-info",
+        "x": 884.4375,
+        "y": 316.84375,
+        "width": 324.5625,
+        "height": 186.3125,
+        "top": 316.84375,
+        "right": 1209,
+        "bottom": 503.15625,
+        "left": 884.4375
+      },
+      {
+        "class": "landing-stage",
+        "x": 408.546875,
+        "y": 120,
+        "width": 447.890625,
+        "height": 580,
+        "top": 120,
+        "right": 856.4375,
+        "bottom": 700,
+        "left": 408.546875
+      },
+      {
+        "class": "landing-actions",
+        "x": 56,
+        "y": 410,
+        "width": 324.546875,
+        "height": 95,
+        "top": 410,
+        "right": 380.546875,
+        "bottom": 505,
+        "left": 56
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "overflow": 0,
+    "heroBottom": 900,
+    "aboutTop": 900,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 56,
+        "y": 226.3125,
+        "width": 371.890625,
+        "height": 233.6875,
+        "top": 226.3125,
+        "right": 427.890625,
+        "bottom": 460,
+        "left": 56
+      },
+      {
+        "class": "landing-info",
+        "x": 997.09375,
+        "y": 361.375,
+        "width": 371.90625,
+        "height": 197.25,
+        "top": 361.375,
+        "right": 1369,
+        "bottom": 558.625,
+        "left": 997.09375
+      },
+      {
+        "class": "landing-stage",
+        "x": 455.890625,
+        "y": 120,
+        "width": 513.203125,
+        "height": 680,
+        "top": 120,
+        "right": 969.09375,
+        "bottom": 800,
+        "left": 455.890625
+      },
+      {
+        "class": "landing-actions",
+        "x": 56,
+        "y": 460,
+        "width": 371.890625,
+        "height": 95,
+        "top": 460,
+        "right": 427.890625,
+        "bottom": 555,
+        "left": 56
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "overflow": 0,
+    "heroBottom": 1080,
+    "aboutTop": 1080,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 232.5,
+        "y": 297.5,
+        "width": 409.453125,
+        "height": 252.5,
+        "top": 297.5,
+        "right": 641.953125,
+        "bottom": 550,
+        "left": 232.5
+      },
+      {
+        "class": "landing-info",
+        "x": 1263.03125,
+        "y": 447.5,
+        "width": 409.453125,
+        "height": 205,
+        "top": 447.5,
+        "right": 1672.484375,
+        "bottom": 652.5,
+        "left": 1263.03125
+      },
+      {
+        "class": "landing-stage",
+        "x": 669.953125,
+        "y": 120,
+        "width": 565.078125,
+        "height": 860,
+        "top": 120,
+        "right": 1235.03125,
+        "bottom": 980,
+        "left": 669.953125
+      },
+      {
+        "class": "landing-actions",
+        "x": 232.5,
+        "y": 550,
+        "width": 409.453125,
+        "height": 95,
+        "top": 550,
+        "right": 641.953125,
+        "bottom": 645,
+        "left": 232.5
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 600,
+    "overflow": 0,
+    "heroBottom": 720,
+    "aboutTop": 720,
+    "poster": true,
+    "rects": [
+      {
+        "class": "landing-intro",
+        "x": 56,
+        "y": 154.875,
+        "width": 324.546875,
+        "height": 215.125,
+        "top": 154.875,
+        "right": 380.546875,
+        "bottom": 370,
+        "left": 56
+      },
+      {
+        "class": "landing-info",
+        "x": 884.4375,
+        "y": 276.84375,
+        "width": 324.5625,
+        "height": 186.3125,
+        "top": 276.84375,
+        "right": 1209,
+        "bottom": 463.15625,
+        "left": 884.4375
+      },
+      {
+        "class": "landing-stage",
+        "x": 408.546875,
+        "y": 120,
+        "width": 447.890625,
+        "height": 500,
+        "top": 120,
+        "right": 856.4375,
+        "bottom": 620,
+        "left": 408.546875
+      },
+      {
+        "class": "landing-actions",
+        "x": 56,
+        "y": 370,
+        "width": 324.546875,
+        "height": 95,
+        "top": 370,
+        "right": 380.546875,
+        "bottom": 465,
+        "left": 56
+      }
+    ],
+    "navVisible": [
+      "ABOUT",
+      "WORK",
+      "ACHIEVEMENTS",
+      "SKILLS",
+      "CONTACT"
+    ],
+    "sections": [
+      "about",
+      "expertise",
+      "career",
+      "work",
+      "achievements",
+      "skills",
+      "contact"
+    ]
+  }
+]

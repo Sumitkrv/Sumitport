@@ -1,0 +1,754 @@
+{
+  "hero": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.009353876114085335,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "name": "upper_arm.L",
+          "quaternion": [
+            0.6666688764050702,
+            -0.047989039626020136,
+            0.10837186367608254,
+            -0.7358703618927861
+          ],
+          "position": [
+            1.3699206532016026,
+            11.175552346467587,
+            -0.3714501429015278
+          ]
+        },
+        {
+          "name": "upper_arm.R",
+          "quaternion": [
+            0.6512879721041672,
+            0.045472440169796735,
+            -0.12814802149567633,
+            -0.7465482755916855
+          ],
+          "position": [
+            -1.3699204615568799,
+            11.175552222619658,
+            -0.37145013768984503
+          ]
+        },
+        {
+          "name": "forearm.L",
+          "quaternion": [
+            -0.060882790827639595,
+            0.02544010122394169,
+            -0.031905400306858456,
+            0.9973104462863288
+          ],
+          "position": [
+            1.621575091104807,
+            9.378027192854924,
+            -0.29954908653370194
+          ]
+        },
+        {
+          "name": "forearm.R",
+          "quaternion": [
+            -0.07141926953321599,
+            -0.02591895750590284,
+            0.039248424421315174,
+            0.996336814371305
+          ],
+          "position": [
+            -1.6909541019752694,
+            9.392029569819474,
+            -0.24660372560326793
+          ]
+        },
+        {
+          "name": "hand.L",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "position": [
+            1.6539028016460975,
+            7.2228446543050255,
+            -0.08403049887837102
+          ]
+        },
+        {
+          "name": "hand.R",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "position": [
+            -1.7552835992056703,
+            7.247724066449887,
+            0.05359935206001293
+          ]
+        }
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "about": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 800,
+    "snapshot": {
+      "owner": "about",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.009353876114085335,
+          11.312069746786953,
+          47.816350675007314
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0.11588477366255143,
+          0.67599451303155,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "name": "upper_arm.L",
+          "quaternion": [
+            -0.5105923414230347,
+            0.009939318522810936,
+            -0.09657386690378189,
+            0.8543244004249573
+          ],
+          "position": [
+            0.8362481998431905,
+            11.233205784659498,
+            0.15298627754969385
+          ]
+        },
+        {
+          "name": "upper_arm.R",
+          "quaternion": [
+            -0.510592520236969,
+            -0.009939346462488174,
+            0.09657382220029831,
+            0.8543242812156677
+          ],
+          "position": [
+            -1.3010610176492248,
+            11.034995009583376,
+            1.8557343891583078
+          ]
+        },
+        {
+          "name": "forearm.L",
+          "quaternion": [
+            -0.03818228095769882,
+            0.03565970063209534,
+            -0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            1.5831507820831165,
+            9.746297570966629,
+            -0.5755995013598009
+          ]
+        },
+        {
+          "name": "forearm.R",
+          "quaternion": [
+            -0.03818223997950554,
+            -0.035659726709127426,
+            0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            -2.0018054223897805,
+            9.413831862843754,
+            2.28045747617179
+          ]
+        },
+        {
+          "name": "hand.L",
+          "quaternion": [
+            0.16551890969276428,
+            0.5110633373260498,
+            -0.1486094444990158,
+            0.8302608132362366
+          ],
+          "position": [
+            2.926519131356909,
+            9.381517090505799,
+            1.0840996455046663
+          ]
+        },
+        {
+          "name": "hand.R",
+          "quaternion": [
+            0.1655188798904419,
+            -0.5110631585121155,
+            0.14860938489437103,
+            0.8302609324455261
+          ],
+          "position": [
+            -0.6429718417402701,
+            9.050485870677981,
+            3.9278356642736165
+          ]
+        }
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "expertise": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 1709,
+    "snapshot": {
+      "owner": "expertise",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          2.6403053573610613,
+          8.687695620389645,
+          60.21716838402426
+        ],
+        "zoom": 1,
+        "aspect": 1.1728395061728396
+      },
+      "root": {
+        "rotation": [
+          -0.04,
+          0.7,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "name": "upper_arm.L",
+          "quaternion": [
+            -0.5105923414230347,
+            0.009939318522810936,
+            -0.09657386690378189,
+            0.8543244004249573
+          ],
+          "position": [
+            0.8084783568167769,
+            11.119960425433975,
+            -1.6125975743216725
+          ]
+        },
+        {
+          "name": "upper_arm.R",
+          "quaternion": [
+            -0.510592520236969,
+            -0.009939346462488174,
+            0.09657382220029831,
+            0.8543242812156677
+          ],
+          "position": [
+            -1.287067710849614,
+            11.19054364036077,
+            0.1510446859396154
+          ]
+        },
+        {
+          "name": "forearm.L",
+          "quaternion": [
+            -0.03818228095769882,
+            0.03565970063209534,
+            -0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            1.541921400934752,
+            9.537255059951224,
+            -2.1192550203739478
+          ]
+        },
+        {
+          "name": "forearm.R",
+          "quaternion": [
+            -0.03818223997950554,
+            -0.035659726709127426,
+            0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            -1.9729845441097797,
+            9.655643471411624,
+            0.8389414361677314
+          ]
+        },
+        {
+          "name": "hand.L",
+          "quaternion": [
+            0.16551890969276428,
+            0.5110633373260498,
+            -0.1486094444990158,
+            0.8302608132362366
+          ],
+          "position": [
+            2.925485967584562,
+            9.433264037334295,
+            -0.45575283041906944
+          ]
+        },
+        {
+          "name": "hand.R",
+          "quaternion": [
+            0.1655188798904419,
+            -0.5110631585121155,
+            0.14860938489437103,
+            0.8302609324455261
+          ],
+          "position": [
+            -0.5742569417737642,
+            9.551141960901477,
+            2.4896820073423154
+          ]
+        }
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": true
+        },
+        {
+          "name": "screenlight",
+          "visible": true
+        },
+        {
+          "name": "Keyboard",
+          "visible": true
+        },
+        {
+          "name": "Plane",
+          "visible": true
+        },
+        {
+          "name": "ground",
+          "visible": true
+        },
+        {
+          "name": "Plane002",
+          "visible": true
+        },
+        {
+          "name": "Plane003",
+          "visible": true
+        },
+        {
+          "name": "Plane004",
+          "visible": true
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 17.5,
+      "y": 414,
+      "width": 570,
+      "height": 486,
+      "top": 414,
+      "right": 587.5,
+      "bottom": 900,
+      "left": 17.5
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false,
+    "whatActive": "true"
+  },
+  "career": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 2609,
+    "snapshot": {
+      "owner": "expertise",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          2.6403053573610613,
+          8.687695620389645,
+          60.21716838402426
+        ],
+        "zoom": 1,
+        "aspect": 1.1728395061728396
+      },
+      "root": {
+        "rotation": [
+          -0.04,
+          0.7,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "arms": [
+        {
+          "name": "upper_arm.L",
+          "quaternion": [
+            -0.5105923414230347,
+            0.009939318522810936,
+            -0.09657386690378189,
+            0.8543244004249573
+          ],
+          "position": [
+            0.8084783568167769,
+            11.119960425433975,
+            -1.6125975743216725
+          ]
+        },
+        {
+          "name": "upper_arm.R",
+          "quaternion": [
+            -0.510592520236969,
+            -0.009939346462488174,
+            0.09657382220029831,
+            0.8543242812156677
+          ],
+          "position": [
+            -1.287067710849614,
+            11.19054364036077,
+            0.1510446859396154
+          ]
+        },
+        {
+          "name": "forearm.L",
+          "quaternion": [
+            -0.03818228095769882,
+            0.03565970063209534,
+            -0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            1.541921400934752,
+            9.537255059951224,
+            -2.1192550203739478
+          ]
+        },
+        {
+          "name": "forearm.R",
+          "quaternion": [
+            -0.03818223997950554,
+            -0.035659726709127426,
+            0.6751141548156738,
+            0.7358610033988953
+          ],
+          "position": [
+            -1.9729845441097797,
+            9.655643471411624,
+            0.8389414361677314
+          ]
+        },
+        {
+          "name": "hand.L",
+          "quaternion": [
+            0.16551890969276428,
+            0.5110633373260498,
+            -0.1486094444990158,
+            0.8302608132362366
+          ],
+          "position": [
+            2.925485967584562,
+            9.433264037334295,
+            -0.45575283041906944
+          ]
+        },
+        {
+          "name": "hand.R",
+          "quaternion": [
+            0.1655188798904419,
+            -0.5110631585121155,
+            0.14860938489437103,
+            0.8302609324455261
+          ],
+          "position": [
+            -0.5742569417737642,
+            9.551141960901477,
+            2.4896820073423154
+          ]
+        }
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": true
+        },
+        {
+          "name": "screenlight",
+          "visible": true
+        },
+        {
+          "name": "Keyboard",
+          "visible": true
+        },
+        {
+          "name": "Plane",
+          "visible": true
+        },
+        {
+          "name": "ground",
+          "visible": true
+        },
+        {
+          "name": "Plane002",
+          "visible": true
+        },
+        {
+          "name": "Plane003",
+          "visible": true
+        },
+        {
+          "name": "Plane004",
+          "visible": true
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 17.5,
+      "y": 414,
+      "width": 570,
+      "height": 486,
+      "top": 414,
+      "right": 587.5,
+      "bottom": 900,
+      "left": 17.5
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false,
+    "whatActive": "true"
+  },
+  "html": {
+    "hero": "Hello, I'm\n\nSUMIT\nTHAKUR\n\n01 SOFTWARE\n\nDEVELOPER\n\n02 FULL-STACK\n\nENGINEER\n\nTHE DEVELOPER\nSUMIT THAKUR\nExplore My Work\n\u2197\nContact Me\n\u2197\nPROFILE\nPROFILE",
+    "navbar": "ABOUT\nABOUT\nWORK\nWORK\nACHIEVEMENTS\nACHIEVEMENTS\nSKILLS\nSKILLS\nCONTACT\nCONTACT",
+    "about": "01 / THE PERSON BEHIND THE CODE\n\nMore than code.\nI build experiences.\n\nI\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.\n\nMy work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.\n\n01\nBuild\n\nResponsive interfaces and scalable full-stack applications.\n\n\u2197\n02\nEngineer\n\nREST APIs, authentication, and reliable database-backed systems.\n\n\u2197\n03\nAutomate\n\nPractical workflows and integrations that reduce repetitive work.\n\n\u2197\n\nSUMIT THAKUR\n\nSoftware Developer / Full-Stack Developer\n\n\u2316 Delhi NCR, India\n\nLet\u2019s talk\n\u2197",
+    "career": "CAREER / EXPERIENCE\n\nTHE JOURNEY\nSO FAR.\n\nBuilding meaningful software,\none challenge at a time.\n\n01\nEXPERIENCE\n\nSoftware Development Engineer\nM2W Reality\n\u2197\n\nOctober 2026\n\u2014\nPresent\n\nBuilding and maintaining production-ready web applications, developing scalable features, and collaborating across frontend and backend systems to deliver reliable user experiences.\n\n02\nEXPERIENCE\n\nSoftware Developer\nCD Solutions\n\u2197\n\nJanuary 2026\n\u2014\nMay 2026\n\nDeveloped scalable full-stack applications with React.js, Node.js, REST APIs, and databases.\n\nImplemented automation workflows and HRMS features.\nDesigned authentication and backend services.\nDebugged production issues and wrote unit and integration tests with Pytest and Playwright.\nReact.js\nNode.js\nREST APIs\nDatabases\nAuthentication\nAutomation\nPytest\nPlaywright\n\n03\nEXPERIENCE\n\nSoftware Development Intern\nCD Solutions\n\u2197\n\nNovember 2025\n\u2014\nDecember 2025\n\nContributed to production web applications and backend workflows using modern web technologies and REST APIs. Assisted with debugging, testing, and automation to improve application reliability.\n\nREST APIs\nBackend Workflows\nTesting\nAutomation\n\n04\nEXPERIENCE\n\nWeb Developer\nCosahyog Consultant and Care\n\u2197\n\nOctober 2024\n\u2014\nDecember 2024\n\nDeveloped and deployed responsive web interfaces using HTML, CSS, JavaScript, and React.js. Improved responsiveness and user engagement by 40% through optimized UI components and layouts.\n\nHTML\nCSS\nJavaScript\nReact.js\n\n05\nEDUCATION\n\nB.Tech (AI & ML)\nGuru Gobind Singh Indraprastha University, Delhi\n\u2197\n\nSeptember 2023\n\u2014\nAugust 2027\n\nPursuing a Bachelor of Technology in Artificial Intelligence & Machine Learning with a CGPA of 8.1/10.0.\n\nArtificial Intelligence\nMachine Learning"
+  }
+}

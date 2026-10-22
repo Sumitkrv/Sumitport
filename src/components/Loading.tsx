@@ -9,9 +9,8 @@ const Loading = ({ ready, onComplete }: LoadingProps) => {
   useEffect(() => {
     if (!ready) return;
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const exitTimer = window.setTimeout(() => setExiting(true), reducedMotion ? 0 : 450);
+    const exitTimer = window.setTimeout(() => setExiting(true), reducedMotion ? 0 : 150);
     const completeTimer = window.setTimeout(() => {
-      import("./utils/initialFX").then(({ initialFX }) => initialFX());
       onComplete();
     }, reducedMotion ? 200 : 1150);
     return () => {

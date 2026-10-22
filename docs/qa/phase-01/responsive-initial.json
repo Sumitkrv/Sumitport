@@ -1,0 +1,1234 @@
+[
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 72,
+      "desktop": "none",
+      "mobile": "flex"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 355,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 3105,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -3105,
+            "bottom": -2305
+          },
+          {
+            "id": "about",
+            "top": -2305,
+            "bottom": -1341
+          },
+          {
+            "id": "expertise",
+            "top": -1341,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 2471
+          },
+          {
+            "id": "work",
+            "top": 2471,
+            "bottom": 3405
+          }
+        ]
+      },
+      {
+        "scroll": 1664,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1664,
+            "bottom": -864
+          },
+          {
+            "id": "about",
+            "top": -864,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1541
+          },
+          {
+            "id": "career",
+            "top": 1541,
+            "bottom": 3912
+          },
+          {
+            "id": "work",
+            "top": 3912,
+            "bottom": 4846
+          }
+        ]
+      },
+      {
+        "scroll": 700,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -700,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 1064
+          },
+          {
+            "id": "expertise",
+            "top": 1064,
+            "bottom": 2505
+          },
+          {
+            "id": "career",
+            "top": 2505,
+            "bottom": 4876
+          },
+          {
+            "id": "work",
+            "top": 4876,
+            "bottom": 5810
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 800
+          },
+          {
+            "id": "about",
+            "top": 800,
+            "bottom": 1764
+          },
+          {
+            "id": "expertise",
+            "top": 1764,
+            "bottom": 3205
+          },
+          {
+            "id": "career",
+            "top": 3205,
+            "bottom": 5576
+          },
+          {
+            "id": "work",
+            "top": 5576,
+            "bottom": 6510
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 72,
+      "desktop": "none",
+      "mobile": "flex"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 273,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 3045,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -3045,
+            "bottom": -2201
+          },
+          {
+            "id": "about",
+            "top": -2201,
+            "bottom": -1317
+          },
+          {
+            "id": "expertise",
+            "top": -1317,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 2361
+          },
+          {
+            "id": "work",
+            "top": 2361,
+            "bottom": 3295
+          }
+        ]
+      },
+      {
+        "scroll": 1628,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1628,
+            "bottom": -784
+          },
+          {
+            "id": "about",
+            "top": -784,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1517
+          },
+          {
+            "id": "career",
+            "top": 1517,
+            "bottom": 3778
+          },
+          {
+            "id": "work",
+            "top": 3778,
+            "bottom": 4712
+          }
+        ]
+      },
+      {
+        "scroll": 744,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -744,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 984
+          },
+          {
+            "id": "expertise",
+            "top": 984,
+            "bottom": 2401
+          },
+          {
+            "id": "career",
+            "top": 2401,
+            "bottom": 4662
+          },
+          {
+            "id": "work",
+            "top": 4662,
+            "bottom": 5596
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 844
+          },
+          {
+            "id": "about",
+            "top": 844,
+            "bottom": 1728
+          },
+          {
+            "id": "expertise",
+            "top": 1728,
+            "bottom": 3145
+          },
+          {
+            "id": "career",
+            "top": 3145,
+            "bottom": 5406
+          },
+          {
+            "id": "work",
+            "top": 5406,
+            "bottom": 6340
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 82,
+      "desktop": "block",
+      "mobile": "none"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 329,
+        "active": "#contact",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 3353,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -3353,
+            "bottom": -2329
+          },
+          {
+            "id": "about",
+            "top": -2329,
+            "bottom": -1387
+          },
+          {
+            "id": "expertise",
+            "top": -1387,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 1893
+          },
+          {
+            "id": "work",
+            "top": 1893,
+            "bottom": 2795
+          }
+        ]
+      },
+      {
+        "scroll": 1866,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1866,
+            "bottom": -842
+          },
+          {
+            "id": "about",
+            "top": -842,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1587
+          },
+          {
+            "id": "career",
+            "top": 1587,
+            "bottom": 3380
+          },
+          {
+            "id": "work",
+            "top": 3380,
+            "bottom": 4282
+          }
+        ]
+      },
+      {
+        "scroll": 924,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -924,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 1042
+          },
+          {
+            "id": "expertise",
+            "top": 1042,
+            "bottom": 2529
+          },
+          {
+            "id": "career",
+            "top": 2529,
+            "bottom": 4322
+          },
+          {
+            "id": "work",
+            "top": 4322,
+            "bottom": 5224
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 1024
+          },
+          {
+            "id": "about",
+            "top": 1024,
+            "bottom": 1966
+          },
+          {
+            "id": "expertise",
+            "top": 1966,
+            "bottom": 3453
+          },
+          {
+            "id": "career",
+            "top": 3453,
+            "bottom": 5246
+          },
+          {
+            "id": "work",
+            "top": 5246,
+            "bottom": 6148
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1024,
+      900
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 82,
+      "desktop": "block",
+      "mobile": "none"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 512,
+        "active": "#contact",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 2854,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -2854,
+            "bottom": -1954
+          },
+          {
+            "id": "about",
+            "top": -1954,
+            "bottom": -1078
+          },
+          {
+            "id": "expertise",
+            "top": -1078,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 1794
+          },
+          {
+            "id": "work",
+            "top": 1794,
+            "bottom": 2866
+          }
+        ]
+      },
+      {
+        "scroll": 1676,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1676,
+            "bottom": -776
+          },
+          {
+            "id": "about",
+            "top": -776,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1278
+          },
+          {
+            "id": "career",
+            "top": 1278,
+            "bottom": 2972
+          },
+          {
+            "id": "work",
+            "top": 2972,
+            "bottom": 4044
+          }
+        ]
+      },
+      {
+        "scroll": 800,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -800,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 976
+          },
+          {
+            "id": "expertise",
+            "top": 976,
+            "bottom": 2154
+          },
+          {
+            "id": "career",
+            "top": 2154,
+            "bottom": 3848
+          },
+          {
+            "id": "work",
+            "top": 3848,
+            "bottom": 4920
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 900
+          },
+          {
+            "id": "about",
+            "top": 900,
+            "bottom": 1776
+          },
+          {
+            "id": "expertise",
+            "top": 1776,
+            "bottom": 2954
+          },
+          {
+            "id": "career",
+            "top": 2954,
+            "bottom": 4648
+          },
+          {
+            "id": "work",
+            "top": 4648,
+            "bottom": 5720
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1280,
+      900
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 82,
+      "desktop": "block",
+      "mobile": "none"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 512,
+        "active": "#contact",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 2600,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -2600,
+            "bottom": -1700
+          },
+          {
+            "id": "about",
+            "top": -1700,
+            "bottom": -800
+          },
+          {
+            "id": "expertise",
+            "top": -800,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 2154
+          },
+          {
+            "id": "work",
+            "top": 2154,
+            "bottom": 2924
+          }
+        ]
+      },
+      {
+        "scroll": 1700,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1700,
+            "bottom": -800
+          },
+          {
+            "id": "about",
+            "top": -800,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1000
+          },
+          {
+            "id": "career",
+            "top": 1000,
+            "bottom": 3054
+          },
+          {
+            "id": "work",
+            "top": 3054,
+            "bottom": 3824
+          }
+        ]
+      },
+      {
+        "scroll": 800,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -800,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 1000
+          },
+          {
+            "id": "expertise",
+            "top": 1000,
+            "bottom": 1900
+          },
+          {
+            "id": "career",
+            "top": 1900,
+            "bottom": 3954
+          },
+          {
+            "id": "work",
+            "top": 3954,
+            "bottom": 4724
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 900
+          },
+          {
+            "id": "about",
+            "top": 900,
+            "bottom": 1800
+          },
+          {
+            "id": "expertise",
+            "top": 1800,
+            "bottom": 2700
+          },
+          {
+            "id": "career",
+            "top": 2700,
+            "bottom": 4754
+          },
+          {
+            "id": "work",
+            "top": 4754,
+            "bottom": 5524
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1440,
+      1000
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 82,
+      "desktop": "block",
+      "mobile": "none"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 567,
+        "active": "#contact",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 2880,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -2880,
+            "bottom": -1880
+          },
+          {
+            "id": "about",
+            "top": -1880,
+            "bottom": -900
+          },
+          {
+            "id": "expertise",
+            "top": -900,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 2130
+          },
+          {
+            "id": "work",
+            "top": 2130,
+            "bottom": 2959
+          }
+        ]
+      },
+      {
+        "scroll": 1880,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1880,
+            "bottom": -880
+          },
+          {
+            "id": "about",
+            "top": -880,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1100
+          },
+          {
+            "id": "career",
+            "top": 1100,
+            "bottom": 3130
+          },
+          {
+            "id": "work",
+            "top": 3130,
+            "bottom": 3959
+          }
+        ]
+      },
+      {
+        "scroll": 900,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -900,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 1080
+          },
+          {
+            "id": "expertise",
+            "top": 1080,
+            "bottom": 2080
+          },
+          {
+            "id": "career",
+            "top": 2080,
+            "bottom": 4110
+          },
+          {
+            "id": "work",
+            "top": 4110,
+            "bottom": 4939
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 1000
+          },
+          {
+            "id": "about",
+            "top": 1000,
+            "bottom": 1980
+          },
+          {
+            "id": "expertise",
+            "top": 1980,
+            "bottom": 2980
+          },
+          {
+            "id": "career",
+            "top": 2980,
+            "bottom": 5010
+          },
+          {
+            "id": "work",
+            "top": 5010,
+            "bottom": 5839
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "initial": {
+      "loader": false,
+      "inert": false,
+      "overflow": -15,
+      "h1": "SUMITTHAKUR",
+      "ids": [],
+      "header": 82,
+      "desktop": "block",
+      "mobile": "none"
+    },
+    "anchors": [
+      {
+        "hash": "#about",
+        "top": 100,
+        "active": "#about",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#work",
+        "top": 100,
+        "active": "#work",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#achievements",
+        "top": 100,
+        "active": "#achievements",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#skills",
+        "top": 100,
+        "active": "#skills",
+        "menu": "false",
+        "overflow": -15
+      },
+      {
+        "hash": "#contact",
+        "top": 632,
+        "active": "#contact",
+        "menu": "false",
+        "overflow": -15
+      }
+    ],
+    "transitions": [
+      {
+        "scroll": 3040,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -3040,
+            "bottom": -1960
+          },
+          {
+            "id": "about",
+            "top": -1960,
+            "bottom": -980
+          },
+          {
+            "id": "expertise",
+            "top": -980,
+            "bottom": 100
+          },
+          {
+            "id": "career",
+            "top": 100,
+            "bottom": 2130
+          },
+          {
+            "id": "work",
+            "top": 2130,
+            "bottom": 2959
+          }
+        ]
+      },
+      {
+        "scroll": 1960,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -1960,
+            "bottom": -880
+          },
+          {
+            "id": "about",
+            "top": -880,
+            "bottom": 100
+          },
+          {
+            "id": "expertise",
+            "top": 100,
+            "bottom": 1180
+          },
+          {
+            "id": "career",
+            "top": 1180,
+            "bottom": 3210
+          },
+          {
+            "id": "work",
+            "top": 3210,
+            "bottom": 4039
+          }
+        ]
+      },
+      {
+        "scroll": 980,
+        "active": "#about",
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": -980,
+            "bottom": 100
+          },
+          {
+            "id": "about",
+            "top": 100,
+            "bottom": 1080
+          },
+          {
+            "id": "expertise",
+            "top": 1080,
+            "bottom": 2160
+          },
+          {
+            "id": "career",
+            "top": 2160,
+            "bottom": 4190
+          },
+          {
+            "id": "work",
+            "top": 4190,
+            "bottom": 5019
+          }
+        ]
+      },
+      {
+        "scroll": 0,
+        "sections": [
+          {
+            "id": "landingDiv",
+            "top": 0,
+            "bottom": 1080
+          },
+          {
+            "id": "about",
+            "top": 1080,
+            "bottom": 2060
+          },
+          {
+            "id": "expertise",
+            "top": 2060,
+            "bottom": 3140
+          },
+          {
+            "id": "career",
+            "top": 3140,
+            "bottom": 5170
+          },
+          {
+            "id": "work",
+            "top": 5170,
+            "bottom": 5999
+          }
+        ]
+      }
+    ]
+  }
+]

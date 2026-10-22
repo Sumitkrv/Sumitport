@@ -34,6 +34,17 @@ const setLighting = (scene: THREE.Scene) => {
   pointLight.castShadow = true;
   scene.add(pointLight);
 
+  const portraitFill = new THREE.DirectionalLight(0xf0f3ff, 0);
+  portraitFill.position.set(1, 14, 10);
+  scene.add(portraitFill);
+  const portraitPink = new THREE.DirectionalLight(0xe9a0bf, 0);
+  portraitPink.position.set(5, 8, -3);
+  scene.add(portraitPink);
+  const setHeroLighting = (amount: number) => {
+    portraitFill.intensity = amount * .6;
+    portraitPink.intensity = amount * .22;
+  };
+
   let environment: THREE.DataTexture | null = null;
   let disposed = false;
   let lightsEnabled = false;
@@ -101,7 +112,6 @@ const setLighting = (scene: THREE.Scene) => {
       ease: ease,
     });
     gsap.to(".character-rim", {
-      y: "55%",
       opacity: 1,
       delay: 0.2,
       duration: 2,
@@ -115,10 +125,10 @@ const setLighting = (scene: THREE.Scene) => {
     if (rim) gsap.killTweensOf(rim);
     if (scene.environment === environment) scene.environment = null;
     environment?.dispose();
-    [ambientLight, keyLight, directionalLight, lavenderLight, pointLight].forEach((light) => scene.remove(light));
+    [ambientLight, keyLight, directionalLight, lavenderLight, pointLight, portraitFill, portraitPink].forEach((light) => scene.remove(light));
   }
 
-  return { setPointLight, turnOnLights, dispose };
+  return { setPointLight, turnOnLights, setHeroLighting, dispose };
 };
 
 export default setLighting;

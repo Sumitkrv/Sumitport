@@ -1,0 +1,68 @@
+{
+  "fallback": {
+    "poster": "visible",
+    "imageComplete": true,
+    "title": "SUMITTHAKUR",
+    "overflow": 0
+  },
+  "work": {
+    "hash": "#work",
+    "top": 99.64344024658203,
+    "scrollY": 5274,
+    "note": "Follow-up used a fresh page and waited for ScrollSmoother to settle."
+  },
+  "contact": {
+    "hash": "#contact",
+    "top": 100.140625
+  },
+  "about": {
+    "hash": "#about",
+    "top": 100
+  },
+  "menu": {
+    "expanded": "true",
+    "focus": "#about"
+  },
+  "socials": [
+    {
+      "label": "GitHub profile",
+      "href": "https://github.com/Sumitkrv"
+    },
+    {
+      "label": "LinkedIn profile",
+      "href": "https://www.linkedin.com/in/sumit-thakur-80ba72278"
+    },
+    {
+      "label": "Open Sumit Thakur LinkedIn profile",
+      "href": "https://www.linkedin.com/in/sumit-thakur-80ba72278"
+    }
+  ],
+  "reduced": {
+    "loader": false,
+    "name": "SUMITTHAKUR",
+    "animation": "1e-05s"
+  },
+  "keyboard": "#work",
+  "sections": [
+    "landingDiv",
+    "about",
+    "expertise",
+    "career",
+    "work",
+    "achievements",
+    "skills",
+    "contact"
+  ],
+  "errors": [],
+  "touchContact": {
+    "hash": "#contact",
+    "top": 100.140625
+  },
+  "careerSelection": [
+    false,
+    false,
+    true,
+    false,
+    false
+  ]
+}

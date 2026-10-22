@@ -6,8 +6,9 @@
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
-  scroll-behavior: smooth;
-  color-scheme: light dark;
+  scrollbar-gutter: stable;
+  scroll-behavior: auto;
+  color-scheme: dark;
   color: #f0eff5;
   background-color: var(--backgroundColor);
 
@@ -24,6 +25,32 @@
   --secondaryText: #a0a6b4;
   --surfaceColor: #101622;
   --backgroundColor: #080b13;
+  --background-secondary: #0d111b;
+  --surface-elevated: #151b28;
+  --text-muted: #828a99;
+  --accent-pink: #e9a0bf;
+  --border-subtle: rgba(255, 255, 255, .09);
+  --font-display: clamp(64px, 8vw, 144px);
+  --font-editorial: clamp(48px, 7vw, 112px);
+  --font-section: clamp(40px, 5vw, 70px);
+  --font-subheading: clamp(20px, 2vw, 28px);
+  --font-body: clamp(14px, 1.1vw, 16px);
+  --font-description: 13px;
+  --font-navigation: 11px;
+  --font-metadata: 10px;
+  --font-button: 12px;
+  --line-body: 1.7;
+  --measure-copy: 65ch;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --column-gap: clamp(24px, 4vw, 64px);
+  --page-gutter: 15px;
+  --content-max: 1300px;
+  --header-height: 72px;
+  --scroll-offset: 100px;
   --sectionSpace: clamp(88px, 11vw, 168px);
   /* Shared layers: character 0, page content 1, navigation fade 10,
      social 20, cursor 30, navigation 50, mobile navigation 60, loading 100. */
@@ -48,7 +75,7 @@ h6 {
   font-family: "Geist", sans-serif;
 }
 
-body { overflow-x: clip; overflow-y: hidden; color: var(--primaryText); background-color: var(--backgroundColor); }
+body { overflow-x: clip; overflow-y: auto; color: var(--primaryText); background-color: var(--backgroundColor); }
 
 :focus-visible {
   outline: 2px solid var(--accentColor);
@@ -64,29 +91,12 @@ a:hover {
   color: var(--accentColor);
 }
 
-main {
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.main-active {
-  opacity: 0;
-  animation: fadeIn 1s 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
-
 body {
   margin: 0;
   height: auto;
   background-color: var(--backgroundColor);
   flex-grow: 1;
-  --cWidth: calc(100% - 30px);
+  --cWidth: calc(100% - var(--page-gutter) * 2);
   --cMaxWidth: 1920px;
   max-width: 100%;
   overflow-x: clip;
@@ -105,7 +115,7 @@ body {
 
 #smooth-content { position: relative; z-index: var(--layer-content); }
 
-[id] { scroll-margin-top: 100px; }
+[id] { scroll-margin-top: var(--scroll-offset); }
 
 .container1 {
   width: var(--cWidth);
@@ -134,8 +144,8 @@ body {
   height: var(--vh);
   margin: auto;
   margin-top: 50px;
-  margin-bottom: -100px;
-  scroll-margin-top: 100px;
+  margin-bottom: 0;
+  scroll-margin-top: var(--scroll-offset);
 }
 
 .techstack h2 {
@@ -200,5 +210,18 @@ body {
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;
+  }
+}
+
+/* Breakpoints are documented in docs/phase-01-audit.md; CSS media queries
+   cannot use custom properties. Shared geometry stays token-driven. */
+@media (min-width: 720px) { :root { --header-height: 82px; } }
+@media (min-width: 768px) { :root { --page-gutter: 3vw; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
   }
 }

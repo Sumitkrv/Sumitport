@@ -1,0 +1,135 @@
+{
+  "landingDiv": {
+    "text": "Hello, I'm\n\nSUMIT\nTHAKUR\n\n01 SOFTWARE\n\nDEVELOPER\n\n02 FULL-STACK\n\nENGINEER\n\nTHE DEVELOPER\nSUMIT THAKUR\nExplore My Work\n\u2197\nContact Me\n\u2197\nSCROLL TO EXPLORE\nPROFILE\nPROFILE",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    }
+  },
+  "about": {
+    "text": "01 / THE PERSON BEHIND THE CODE\n\nMore than code.\nI build experiences.\n\nI\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.\n\nMy work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.\n\n01\nBuild\n\nResponsive interfaces and scalable full-stack applications.\n\n\u2197\n02\nEngineer\n\nREST APIs, authentication, and reliable database-backed systems.\n\n\u2197\n03\nAutomate\n\nPractical workflows and integrations that reduce repetitive work.\n\n\u2197\n\nSUMIT THAKUR\n\nSoftware Developer / Full-Stack Developer\n\n\u2316 Delhi NCR, India\n\nLet\u2019s talk\n\u2197",
+    "rect": {
+      "x": 42.75,
+      "y": 100,
+      "width": 1339.5,
+      "height": 908.8125,
+      "top": 100,
+      "right": 1382.25,
+      "bottom": 1008.8125,
+      "left": 42.75
+    }
+  },
+  "expertise": {
+    "text": "02 / ENGINEERING EXPERTISE\n\nWHAT\nI DO.\n\nI build complete digital solutions, from thoughtful interfaces to reliable systems.\n\nPreparing the studio\nDESIGN\nENGINEER\nDELIVER\nTHE CAPABILITY INDEX\n01 \u2014 04\n01\nFULL-STACK\nDEVELOPMENT\n\nEnd-to-End Web Applications\n\nBuilding modern full-stack applications with responsive frontend interfaces, reliable backend services, database integrations and secure authentication workflows.\n\nReact Development\nBackend Development\nREST APIs\nAuthentication\nDatabase Integration\nDeployment\n02\nAI & BUSINESS\nAUTOMATION\n03\nTESTING & QUALITY\nENGINEERING\n04\nRESPONSIVE UI &\nFRONTEND ENGINEERING",
+    "rect": {
+      "x": 56,
+      "y": 99.8125,
+      "width": 1313,
+      "height": 969.8125,
+      "top": 99.8125,
+      "right": 1369,
+      "bottom": 1069.625,
+      "left": 56
+    }
+  },
+  "career": {
+    "text": "CAREER / EXPERIENCE\n\nTHE JOURNEY\nSO FAR.\n\nBuilding meaningful software,\none challenge at a time.\n\n01\nEXPERIENCE\n\nSoftware Development Engineer\nM2W Reality\n\u2197\n\nOctober 2026\n\u2014\nPresent\n\nBuilding and maintaining production-ready web applications, developing scalable features, and collaborating across frontend and backend systems to deliver reliable user experiences.\n\n02\nEXPERIENCE\n\nSoftware Developer\nCD Solutions\n\u2197\n\nJanuary 2026\n\u2014\nMay 2026\n\nDeveloped scalable full-stack applications with React.js, Node.js, REST APIs, and databases.\n\nImplemented automation workflows and HRMS features.\nDesigned authentication and backend services.\nDebugged production issues and wrote unit and integration tests with Pytest and Playwright.\nReact.js\nNode.js\nREST APIs\nDatabases\nAuthentication\nAutomation\nPytest\nPlaywright\n\n03\nEXPERIENCE\n\nSoftware Development Intern\nCD Solutions\n\u2197\n\nNovember 2025\n\u2014\nDecember 2025\n\nContributed to production web applications and backend workflows using modern web technologies and REST APIs. Assisted with debugging, testing, and automation to improve application reliability.\n\nREST APIs\nBackend Workflows\nTesting\nAutomation\n\n04\nEXPERIENCE\n\nWeb Developer\nCosahyog Consultant and Care\n\u2197\n\nOctober 2024\n\u2014\nDecember 2024\n\nDeveloped and deployed responsive web interfaces using HTML, CSS, JavaScript, and React.js. Improved responsiveness and user engagement by 40% through optimized UI components and layouts.\n\nHTML\nCSS\nJavaScript\nReact.js\n\n05\nEDUCATION\n\nB.Tech (AI & ML)\nGuru Gobind Singh Indraprastha University, Delhi\n\u2197\n\nSeptember 2023\n\u2014\nAugust 2027\n\nPursuing a Bachelor of Technology in Artificial Intelligence & Machine Learning with a CGPA of 8.1/10.0.\n\nArtificial Intelligence\nMachine Learning",
+    "rect": {
+      "x": 42.75,
+      "y": 99.625,
+      "width": 1339.5,
+      "height": 2029.734375,
+      "top": 99.625,
+      "right": 1382.25,
+      "bottom": 2129.359375,
+      "left": 42.75
+    }
+  },
+  "work": {
+    "text": "My Work\n01\nStaffSphere\n\nHR Management System\n\nTOOLS & FEATURES\n\nReact.js, Flask, REST APIs, MongoDB, JWT, Redis\n\nFull-stack HR management system covering employee management, attendance, leave, payroll, and administration.\n\nRole-based access control, JWT authentication, five+ workflows, Vitest and Pytest testing\n\nOpen project\n02\nTelemedicine Platform\n\nHealthcare Web Application\n\nTOOLS & FEATURES\n\nNode.js, Express, Socket.io, PeerJS, JavaScript\n\nTelemedicine platform for appointments, video consultations, electronic health records, pharmacy, lab tests, and symptom mapping.\n\nReal-time communication, responsive consultation interfaces, Playwright end-to-end testing\n\nOpen project\n03\nPR Sparkz\n\nBusiness Website\n\nTOOLS & FEATURES\n\nReact.js, Tailwind CSS, JavaScript\n\nResponsive business website developed and deployed with a focus on clear navigation and accessible interfaces.\n\nResponsive layouts, accessibility improvements, frontend performance, cross-device compatibility\n\nOpen project\n04\nMIET Life\n\nConsultation Platform\n\nTOOLS & FEATURES\n\nWebsite\n\nConsultation Platform\n\nOpen project\n05\nSahyog Care For You\n\nDelhi-based NGO\n\nTOOLS & FEATURES\n\nWebsite\n\nDelhi-based NGO\n\nOpen project\n06\nAI Vidya\n\nOdisha Government Project\n\nTOOLS & FEATURES\n\nWebsite\n\nOdisha Government Project\n\nOpen project\n07\nVibhu Kitchen\n\nCommercial Kitchen Equipment Manufacturer\n\nTOOLS & FEATURES\n\nWebsite\n\nCommercial Kitchen Equipment Manufacturer\n\nOpen project\n08\nCD Hydro\n\nHydropower Solutions Company\n\nTOOLS & FEATURES\n\nWebsite\n\nHydropower Solutions Company\n\nOpen project\n09\nBK Sikha\n\nYoga Instructor Website\n\nTOOLS & FEATURES\n\nWebsite\n\nYoga Instructor Website\n\nOpen project\n10\nCDEV EV\n\nElectric Vehicle Manufacturer\n\nTOOLS & FEATURES\n\nWebsite\n\nElectric Vehicle Manufacturer\n\nOpen project\n11\nCD IT\n\nIT Service Provider\n\nTOOLS & FEATURES\n\nWebsite\n\nIT Service Provider\n\nOpen project\n12\nMama Giggles\n\nMaternal & Women's Healthcare Platform\n\nTOOLS & FEATURES\n\nWebsite\n\nHealthcare platform supporting mothers through pregnancy, self-care, appointments, and trusted gynecology guidance.\n\nPregnancy wellness resources, appointment scheduling, nearby gynecologist discovery, multilingual access\n\nOpen project\n13\nSafar Hamara\n\nTravel Platform\n\nTOOLS & FEATURES\n\nWebsite\n\nTravel Platform\n\nOpen project\n14\nPortfolio Website\n\nPersonal Brand & Showcase\n\nTOOLS & FEATURES\n\nReact.js, TypeScript, Vite, Three.js\n\nAnimated developer portfolio with responsive layouts and interactive 3D experiences.\n\nGSAP motion, Three.js, responsive UI, accessible navigation\n\nOpen project",
+    "rect": {
+      "x": 0,
+      "y": 100.359375,
+      "width": 1425,
+      "height": 829,
+      "top": 100.359375,
+      "right": 1425,
+      "bottom": 929.359375,
+      "left": 0
+    }
+  },
+  "entries": [
+    {
+      "title": "Software Development Engineer",
+      "company": "M2W Reality",
+      "dates": "October 2026\u2014Present",
+      "description": "Building and maintaining production-ready web applications, developing scalable features, and collaborating across frontend and backend systems to deliver reliable user experiences.",
+      "highlights": [],
+      "tags": []
+    },
+    {
+      "title": "Software Developer",
+      "company": "CD Solutions",
+      "dates": "January 2026\u2014May 2026",
+      "description": "Developed scalable full-stack applications with React.js, Node.js, REST APIs, and databases.",
+      "highlights": [
+        "Implemented automation workflows and HRMS features.",
+        "Designed authentication and backend services.",
+        "Debugged production issues and wrote unit and integration tests with Pytest and Playwright."
+      ],
+      "tags": [
+        "React.js",
+        "Node.js",
+        "REST APIs",
+        "Databases",
+        "Authentication",
+        "Automation",
+        "Pytest",
+        "Playwright"
+      ]
+    },
+    {
+      "title": "Software Development Intern",
+      "company": "CD Solutions",
+      "dates": "November 2025\u2014December 2025",
+      "description": "Contributed to production web applications and backend workflows using modern web technologies and REST APIs. Assisted with debugging, testing, and automation to improve application reliability.",
+      "highlights": [],
+      "tags": [
+        "REST APIs",
+        "Backend Workflows",
+        "Testing",
+        "Automation"
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Cosahyog Consultant and Care",
+      "dates": "October 2024\u2014December 2024",
+      "description": "Developed and deployed responsive web interfaces using HTML, CSS, JavaScript, and React.js. Improved responsiveness and user engagement by 40% through optimized UI components and layouts.",
+      "highlights": [],
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js"
+      ]
+    },
+    {
+      "title": "B.Tech (AI & ML)",
+      "company": "Guru Gobind Singh Indraprastha University, Delhi",
+      "dates": "September 2023\u2014August 2027",
+      "description": "Pursuing a Bachelor of Technology in Artificial Intelligence & Machine Learning with a CGPA of 8.1/10.0.",
+      "highlights": [],
+      "tags": [
+        "Artificial Intelligence",
+        "Machine Learning"
+      ]
+    }
+  ]
+}

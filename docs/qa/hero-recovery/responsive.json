@@ -1,0 +1,10 @@
+[
+  { "viewport": [1920, 1080], "heroHeight": 1080, "stage": [670, 120, 565, 860], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [1440, 900], "heroHeight": 900, "stage": [456, 120, 513, 680], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [1280, 800], "heroHeight": 800, "stage": [409, 120, 448, 580], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [1024, 768], "heroHeight": 925, "stage": [105, 356, 800, 380], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [768, 1024], "heroHeight": 1024, "stage": [40, 324, 673, 511], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [390, 844], "heroHeight": 844, "stage": [20, 339, 335, 335], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [360, 800], "heroHeight": 800, "stage": [20, 335, 305, 295], "horizontalOverflow": false, "liveWebGL": true },
+  { "viewport": [1440, 600], "heroHeight": 720, "stage": [456, 120, 513, 500], "horizontalOverflow": false, "liveWebGL": true }
+]

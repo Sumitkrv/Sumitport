@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 export default function setSplitText(): () => void {
   ScrollTrigger.config({ ignoreMobileResize: true });
-  if (window.innerWidth < 900) return () => undefined;
+  if (window.innerWidth < 900 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return () => undefined;
 
   const splits: SplitText[] = [];
   const context = gsap.context(() => {

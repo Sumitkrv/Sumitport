@@ -25,6 +25,7 @@ const Cursor = () => {
         cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
       }
       cursor.classList.add("cursor-visible");
+      if (!frame) frame = requestAnimationFrame(loop);
     };
     const loop = () => {
       if (!hovering) {
@@ -32,10 +33,20 @@ const Cursor = () => {
         cursorPos.y += (mousePos.y - cursorPos.y) / 7;
         cursor.style.transform = `translate3d(${cursorPos.x}px, ${cursorPos.y}px, 0)`;
       }
-      frame = requestAnimationFrame(loop);
+      frame = 0;
+      if (!hovering && (Math.abs(mousePos.x - cursorPos.x) > .1 || Math.abs(mousePos.y - cursorPos.y) > .1)) frame = requestAnimationFrame(loop);
     };
     document.addEventListener("mousemove", onMouseMove, { passive: true });
-    frame = requestAnimationFrame(loop);
+    const hide = () => {
+      cursor.classList.remove("cursor-visible", "cursor-icons", "cursor-disable");
+      hovering = false;
+      hasPointerPosition = false;
+      cancelAnimationFrame(frame);
+      frame = 0;
+    };
+    document.documentElement.addEventListener("pointerleave", hide);
+    window.addEventListener("blur", hide);
+    window.addEventListener("scroll", hide, { passive: true });
     const handlers: Array<{ element: HTMLElement; enter: () => void; leave: () => void }> = [];
     document.querySelectorAll("[data-cursor]").forEach((item) => {
       const element = item as HTMLElement;
@@ -62,6 +73,9 @@ const Cursor = () => {
     return () => {
       cancelAnimationFrame(frame);
       document.removeEventListener("mousemove", onMouseMove);
+      document.documentElement.removeEventListener("pointerleave", hide);
+      window.removeEventListener("blur", hide);
+      window.removeEventListener("scroll", hide);
       handlers.forEach(({ element, enter, leave }) => {
         element.removeEventListener("pointerenter", enter);
         element.removeEventListener("pointerleave", leave);
@@ -69,7 +83,7 @@ const Cursor = () => {
     };
   }, []);
 
-  return <div className="cursor-main" ref={cursorRef}></div>;
+  return <div className="cursor-main" ref={cursorRef} aria-hidden="true"></div>;
 };
 
 export default Cursor;

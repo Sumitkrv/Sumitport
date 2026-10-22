@@ -1,0 +1,1587 @@
+[
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        14.994050458097647
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.3827917346973423,
+            -0.36985392198009276,
+            0.988177483053848
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.44384053340265767,
+            -0.38185707606395675,
+            0.9877613291407796
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4620779276683362,
+            -0.9132875613775887,
+            0.9881563412676881
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5416589859087135,
+            -0.9483294585151202,
+            0.9876014869836567
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.48981906203129183,
+            -1.585103161143421,
+            0.9879840180374552
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5560927847165731,
+            -1.6579163800149392,
+            0.9873203813349023
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.4227156045153814,
+          -0.14650590299682661,
+          0.9885124531904524
+        ],
+        [
+          0.5086237905011864,
+          0.8763513874496505,
+          0.9859745164359487
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 234.828125,
+      "y": 320,
+      "width": 540,
+      "height": 540,
+      "top": 320,
+      "right": 774.828125,
+      "bottom": 860,
+      "left": 234.828125
+    },
+    "copy": {
+      "x": 1177.84375,
+      "y": 206.953125,
+      "width": 670,
+      "height": 766.078125,
+      "top": 206.953125,
+      "right": 1847.84375,
+      "bottom": 973.03125,
+      "left": 1177.84375
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        14.994050458097647
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.3827917346973423,
+            -0.36985392198009276,
+            0.988177483053848
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.44384053340265767,
+            -0.38185707606395675,
+            0.9877613291407796
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4620779276683362,
+            -0.9132875613775887,
+            0.9881563412676881
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5416589859087135,
+            -0.9483294585151202,
+            0.9876014869836567
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.48981906203129183,
+            -1.585103161143421,
+            0.9879840180374552
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5560927847165731,
+            -1.6579163800149392,
+            0.9873203813349023
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.4227156045153814,
+          -0.14650590299682661,
+          0.9885124531904524
+        ],
+        [
+          0.5086237905011864,
+          0.8763513874496505,
+          0.9859745164359487
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 107.625,
+      "y": 284.4094543457031,
+      "width": 540,
+      "height": 540,
+      "top": 284.4094543457031,
+      "right": 647.625,
+      "bottom": 824.4094543457031,
+      "left": 107.625
+    },
+    "copy": {
+      "x": 713.75,
+      "y": 188.00320434570312,
+      "width": 668.5,
+      "height": 732.8125,
+      "top": 188.00320434570312,
+      "right": 1382.25,
+      "bottom": 920.8157043457031,
+      "left": 713.75
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "viewport": [
+      1280,
+      800
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        14.994050458097647
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.3827917346973423,
+            -0.36985392198009276,
+            0.988177483053848
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.44384053340265767,
+            -0.38185707606395675,
+            0.9877613291407796
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4620779276683362,
+            -0.9132875613775887,
+            0.9881563412676881
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5416589859087135,
+            -0.9483294585151202,
+            0.9876014869836567
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.48981906203129183,
+            -1.585103161143421,
+            0.9879840180374552
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5560927847165731,
+            -1.6579163800149392,
+            0.9873203813349023
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.4227156045153814,
+          -0.14650590299682661,
+          0.9885124531904524
+        ],
+        [
+          0.5086237905011864,
+          0.8763513874496505,
+          0.9859745164359487
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 65.21875,
+      "y": 288.0625,
+      "width": 540,
+      "height": 506,
+      "top": 288.0625,
+      "right": 605.21875,
+      "bottom": 794.0625,
+      "left": 65.21875
+    },
+    "copy": {
+      "x": 607.203125,
+      "y": 188,
+      "width": 619.84375,
+      "height": 706.140625,
+      "top": 188,
+      "right": 1227.046875,
+      "bottom": 894.140625,
+      "left": 607.203125
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        15.367962160495594
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.39769920737532555,
+            -0.3611990882215089,
+            0.9884775503926585
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.4607755650772317,
+            -0.3726383646294295,
+            0.9880809463633995
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.48005460707841247,
+            -0.8918816000148132,
+            0.9884573872717535
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5621624901164036,
+            -0.9251654308828902,
+            0.9879287731506761
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.5087150120152116,
+            -1.547464329280076,
+            0.9882930989840236
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5768470484866572,
+            -1.6165914607932024,
+            0.9876613694667105
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.4394465030950213,
+          -0.1431650798436532,
+          0.9887972223082934
+        ],
+        [
+          0.5263157894736843,
+          0.8524172914884669,
+          0.9863848921638475
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 30.265625,
+      "y": 335.0447692871094,
+      "width": 379.375,
+      "height": 403.5937805175781,
+      "top": 335.0447692871094,
+      "right": 409.640625,
+      "bottom": 738.6385498046875,
+      "left": 30.265625
+    },
+    "copy": {
+      "x": 409.640625,
+      "y": 189.71664428710938,
+      "width": 569.078125,
+      "height": 694.265625,
+      "top": 189.71664428710938,
+      "right": 978.71875,
+      "bottom": 883.9822692871094,
+      "left": 409.640625
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "visible"
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        18.949803460977193
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.4098687031739072,
+            -0.2950577707873236,
+            0.9907707023654763
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.4721371098888902,
+            -0.30264718684652236,
+            0.990507574641089
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4945983330919453,
+            -0.7283491035493657,
+            0.9907572514900166
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5747524448336069,
+            -0.7497366463826186,
+            0.9904074187202445
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.5228713127664716,
+            -1.2606986491731995,
+            0.9906479491072313
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5874870307142214,
+            -1.3049932597112734,
+            0.9902324885508538
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.45502039399091815,
+          -0.11749850162556558,
+          0.9909850210938151
+        ],
+        [
+          0.5263157894736843,
+          0.6756513210544709,
+          0.9894157341852974
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 13
+    },
+    "stage": {
+      "x": 22.59375,
+      "y": 381.0343017578125,
+      "width": 283.125,
+      "height": 380,
+      "top": 381.0343017578125,
+      "right": 305.71875,
+      "bottom": 761.0343017578125,
+      "left": 22.59375
+    },
+    "copy": {
+      "x": 305.71875,
+      "y": 214.8311767578125,
+      "width": 424.6875,
+      "height": 712.40625,
+      "top": 214.8311767578125,
+      "right": 730.40625,
+      "bottom": 927.2374267578125,
+      "left": 305.71875
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        14.994050458097647
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.3914915468495547,
+            -0.36985392198009276,
+            0.988177483053848
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.45392781825271805,
+            -0.38185707606395675,
+            0.9877613291407796
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4725796987517075,
+            -0.9132875613775887,
+            0.9881563412676881
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5539694174066389,
+            -0.9483294585151202,
+            0.9876014869836567
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.500951313441094,
+            -1.585103161143421,
+            0.9879840180374552
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5687312570964951,
+            -1.6579163800149392,
+            0.9873203813349023
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.4323227773452765,
+          -0.14650590299682661,
+          0.9885124531904524
+        ],
+        [
+          0.5201834221034862,
+          0.8763513874496505,
+          0.9859745164359487
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 19,
+      "y": 192,
+      "width": 352,
+      "height": 360,
+      "top": 192,
+      "right": 371,
+      "bottom": 552,
+      "left": 19
+    },
+    "copy": {
+      "x": 19,
+      "y": 586,
+      "width": 352,
+      "height": 683.859375,
+      "top": 586,
+      "right": 371,
+      "bottom": 1269.859375,
+      "left": 19
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "pose": {
+      "loaded": true,
+      "visible": true,
+      "context": true,
+      "reduced": false,
+      "camera": [
+        0.011607929373155912,
+        12.40231830762744,
+        15.80194476088634
+      ],
+      "head": [
+        [
+          -1.4281035482055058,
+          11.903339259244847,
+          -1.029275612733087
+        ],
+        [
+          1.4513194069518176,
+          14.882920226896694,
+          1.677115440756011
+        ]
+      ],
+      "bones": [
+        {
+          "name": "upper_armL",
+          "quaternion": [
+            -0.6666688806800266,
+            0.04798901608034856,
+            -0.10837183689239938,
+            0.7358703349888309
+          ],
+          "world": [
+            1.2812872336399583,
+            11.175552346467587,
+            -0.6107051904488237
+          ],
+          "projected": [
+            0.39945648346587703,
+            -0.3516482771075253,
+            0.9888086817066039
+          ]
+        },
+        {
+          "name": "upper_armR",
+          "quaternion": [
+            -0.6512879741361497,
+            -0.0454724678078654,
+            0.1281480332328342,
+            0.7465482206442926
+          ],
+          "world": [
+            -1.4142881654237052,
+            11.175552222619658,
+            -0.12019259929159692
+          ],
+          "projected": [
+            -0.4624243066956297,
+            -0.3624815268363013,
+            0.9884330888845209
+          ]
+        },
+        {
+          "name": "forearmL",
+          "quaternion": [
+            -0.06088282496280142,
+            0.025440102015871213,
+            -0.03190538640085302,
+            0.9973104515849989
+          ],
+          "world": [
+            1.541748269081378,
+            9.378027261159959,
+            -0.5850193975954057
+          ],
+          "projected": [
+            0.4821552519391143,
+            -0.8682615388325381,
+            0.9887895716064908
+          ]
+        },
+        {
+          "name": "forearmR",
+          "quaternion": [
+            -0.0714192632577387,
+            -0.025918957566664957,
+            0.03924843432445156,
+            0.9963368146796833
+          ],
+          "world": [
+            -1.7077838606806728,
+            9.392029680177457,
+            0.060111216036282306
+          ],
+          "projected": [
+            -0.5639929478809792,
+            -0.8996597807092778,
+            0.9882891442664076
+          ]
+        },
+        {
+          "name": "handL",
+          "quaternion": [
+            0.05254027247428894,
+            0.058879777789115906,
+            0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            1.6121377366329477,
+            7.222844796591049,
+            -0.37877045892725836
+          ],
+          "projected": [
+            0.5107638983071264,
+            -1.505959823174528,
+            0.9886339239086794
+          ]
+        },
+        {
+          "name": "handR",
+          "quaternion": [
+            0.05254027992486954,
+            -0.058879781514406204,
+            -0.02747926488518715,
+            0.996502697467804
+          ],
+          "world": [
+            -1.7173288024192326,
+            7.2477243146321015,
+            0.3669809665928231
+          ],
+          "projected": [
+            -0.5783991243454052,
+            -1.5711379971327377,
+            0.9880364238394638
+          ]
+        }
+      ],
+      "projectedHead": [
+        [
+          -0.44168637388037385,
+          -0.13947365686560945,
+          0.9891118762773418
+        ],
+        [
+          0.5263157894736842,
+          0.8262269380056831,
+          0.9868339538452183
+        ]
+      ],
+      "root": [
+        0,
+        0.18,
+        0,
+        "XYZ"
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ],
+      "calls": 12
+    },
+    "stage": {
+      "x": 16,
+      "y": 192,
+      "width": 328,
+      "height": 360,
+      "top": 192,
+      "right": 344,
+      "bottom": 552,
+      "left": 16
+    },
+    "copy": {
+      "x": 16,
+      "y": 586,
+      "width": 328,
+      "height": 676.265625,
+      "top": 586,
+      "right": 344,
+      "bottom": 1262.265625,
+      "left": 16
+    },
+    "content": "<p class=\"about-eyebrow about-reveal\" style=\"--reveal-index: 0;\"><span class=\"about-eyebrow-line\"></span>01 / THE PERSON BEHIND THE CODE</p><h2 class=\"about-heading about-reveal\" id=\"about-heading\" style=\"--reveal-index: 1;\">More than code.<br>I build <span>experiences.</span></h2><div class=\"about-story about-reveal\" style=\"--reveal-index: 2;\"><p>I\u2019m Sumit, a software developer focused on turning complex problems into intuitive digital products. I work across frontend interfaces, backend systems, and automation workflows\u2014bringing ideas from concept to functional applications.</p><p>My work spans responsive applications, REST APIs, authentication, testing, and production deployments, with a focus on usability, reliability, and performance.</p></div><ol class=\"about-focus-list\" aria-label=\"My focus areas\"><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 3;\"><span class=\"about-focus-number\">01</span><div class=\"about-focus-copy\"><h3>Build</h3><p>Responsive interfaces and scalable full-stack applications.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 4;\"><span class=\"about-focus-number\">02</span><div class=\"about-focus-copy\"><h3>Engineer</h3><p>REST APIs, authentication, and reliable database-backed systems.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li><li class=\"about-focus-row about-reveal\" style=\"--reveal-index: 5;\"><span class=\"about-focus-number\">03</span><div class=\"about-focus-copy\"><h3>Automate</h3><p>Practical workflows and integrations that reduce repetitive work.</p></div><span class=\"about-focus-arrow\" aria-hidden=\"true\">\u2197</span></li></ol><div class=\"about-signature about-reveal\" style=\"--reveal-index: 6;\"><div class=\"about-identity\"><p class=\"about-name\">SUMIT THAKUR</p><p class=\"about-role\">Software Developer <span>/</span> Full-Stack Developer</p><p class=\"about-location\"><span aria-hidden=\"true\">\u2316</span> Delhi NCR, India</p></div><a class=\"about-contact-link\" href=\"#contact\">Let\u2019s talk <span aria-hidden=\"true\">\u2197</span></a></div>",
+    "overflow": false,
+    "sharedVisibility": "hidden"
+  },
+  {
+    "errors": []
+  }
+]

@@ -1,6 +1,7 @@
 import { CSSProperties, MouseEvent, useEffect, useRef } from "react";
-import { getSmoother } from "./utils/smoother";
+import { scrollToSection as navigateToSection } from "./utils/smoother";
 import "./styles/About.css";
+import AboutPortrait from "./Character/AboutPortrait";
 
 const focusAreas = [
   {
@@ -51,14 +52,7 @@ const About = () => {
     if (!target) return;
 
     event.preventDefault();
-    const smooth = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const smoother = getSmoother();
-    if (smoother) {
-      smoother.scrollTo(target, smooth, "top 100px");
-    } else {
-      const top = target.getBoundingClientRect().top + window.scrollY - 92;
-      window.scrollTo({ top, behavior: smooth ? "smooth" : "auto" });
-    }
+    navigateToSection("contact");
     window.history.replaceState(null, "", "#contact");
   };
 
@@ -69,6 +63,7 @@ const About = () => {
       ref={sectionRef}
       aria-labelledby="about-heading"
     >
+      <AboutPortrait />
       <div className="about-me">
         <p className="about-eyebrow about-reveal" style={{ "--reveal-index": 0 } as CSSProperties}>
           <span className="about-eyebrow-line" />

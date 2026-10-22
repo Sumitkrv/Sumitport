@@ -1,0 +1,804 @@
+{
+  "hero": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.009353876114085335,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "pointer-50": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.121020542780752,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "pointer-1390": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          0.10231279055258133,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "partial": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 400,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          0.05574671830749675,
+          11.841013505360344,
+          32.0496827156295
+        ],
+        "zoom": 1.0417009602194787,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0.05004115226337448,
+          0.2919067215363511,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": -148.5596923828125,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1276.4403076171875,
+      "bottom": 900,
+      "left": -148.5596923828125
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "about": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 800,
+    "snapshot": {
+      "owner": "about",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.005524429383404038,
+          11.456925713865143,
+          28.238216630331145
+        ],
+        "zoom": 1.0965706447187928,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0.11588477366255143,
+          0.67599451303155,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": -344.032958984375,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1080.967041015625,
+      "bottom": 900,
+      "left": -344.032958984375
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "expertise": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 1709,
+    "snapshot": {
+      "owner": "expertise",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          1.2979563262224385,
+          8.617524224416364,
+          92.47031122707061
+        ],
+        "zoom": 1,
+        "aspect": 1.1728395061728396
+      },
+      "root": {
+        "rotation": [
+          -0.04,
+          0.7,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": true
+        },
+        {
+          "name": "screenlight",
+          "visible": true
+        },
+        {
+          "name": "Keyboard",
+          "visible": true
+        },
+        {
+          "name": "Plane",
+          "visible": true
+        },
+        {
+          "name": "ground",
+          "visible": true
+        },
+        {
+          "name": "Plane002",
+          "visible": true
+        },
+        {
+          "name": "Plane003",
+          "visible": true
+        },
+        {
+          "name": "Plane004",
+          "visible": true
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 17.5,
+      "y": 414,
+      "width": 570,
+      "height": 486,
+      "top": 414,
+      "right": 587.5,
+      "bottom": 900,
+      "left": 17.5
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false,
+    "whatActive": "true"
+  },
+  "scrolled-refresh": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.009353876114085335,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "returned": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "scrollY": 0,
+    "snapshot": {
+      "owner": "hero",
+      "asset": "/models/character.enc?v=2",
+      "headBounds": [
+        [
+          -1.4727077484133213,
+          11.903339259244847,
+          -1.013402754669029
+        ],
+        [
+          1.4539999961851506,
+          14.882920226896694,
+          1.6617040408132553
+        ]
+      ],
+      "camera": {
+        "position": [
+          -0.009353876114085335,
+          12.132920226896694,
+          34.946396940456246
+        ],
+        "zoom": 1,
+        "aspect": 1.5833333333333333
+      },
+      "root": {
+        "rotation": [
+          0,
+          0,
+          0,
+          "XYZ"
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "furniture": [
+        {
+          "name": "Cube002",
+          "visible": false
+        },
+        {
+          "name": "screenlight",
+          "visible": false
+        },
+        {
+          "name": "Keyboard",
+          "visible": false
+        },
+        {
+          "name": "Plane",
+          "visible": false
+        },
+        {
+          "name": "ground",
+          "visible": false
+        },
+        {
+          "name": "Plane002",
+          "visible": false
+        },
+        {
+          "name": "Plane003",
+          "visible": false
+        },
+        {
+          "name": "Plane004",
+          "visible": false
+        }
+      ]
+    },
+    "canvasBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 900,
+      "top": 0,
+      "right": 1425,
+      "bottom": 900,
+      "left": 0
+    },
+    "alpha": true,
+    "clear": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "lost": false,
+    "canvasCount": 1,
+    "overflow": false,
+    "loader": false
+  },
+  "errors": []
+}
